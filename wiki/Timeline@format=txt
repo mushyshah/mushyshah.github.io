@@ -1,0 +1,35 @@
+[wiki:FunctionalDescription Functional Description] |
+[wiki:Func&nonFuncReq Functional and Non-functional Requirements] |
+[wiki:UseCases Use Cases] |
+[wiki:GUISketches Sketches of the GUI] |
+[wiki:Roles List of Roles] |
+[wiki:Timeline Timeline] |
+[wiki:Glossary Glossary of Terms][[BR]]
+== Time Line ==
+A project plan, or time-line, for the remaining 7 weeks you have to work on this project.
+=== Week 4 ===
+
+ * Finish planning [[BR]]
+ * Finish functional analysis document [[BR]]
+ * Start researching libraries [[BR]]
+ * Learn to play Dungeon and Dragons! [[BR]]
+
+=== Week 5 ===
+ * Start GUI Frames [[BR]]
+ * Start parsing [[BR]]
+ * Decide on data format/data structure [[BR]]
+ * Decide on libraries being used [[BR]]
+
+=== Week 7 - 8 ===
+ * Logic decides what is needed from parser [[BR]]
+ * GUI decides what information they want to display [[BR]]
+ * Parser should have data in format Logic can use [[BR]]
+ * GUI gets as much data in a possible [[BR]]
+
+=== Week 9 ===
+ * Goal is to have information going from text file all the way up to GUI [[BR]]
+ * Have a rough GUI with all of data on it [[BR]]
+
+=== Week 10-11 ===
+ * add functionality to data GUI [[BR]]
+ * refine final design [[BR]]

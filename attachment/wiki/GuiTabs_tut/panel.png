@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      Attachment – Aquarius
+    </title>
+        <link rel="search" href="http://brown.caslab.queensu.ca/web/Aquarius/search" />
+        <link rel="help" href="../../../wiki/TracGuide" />
+        <link rel="alternate" href="../../../raw-attachment/wiki/GuiTabs_tut/panel.png" type="image/png; charset=iso-8859-15" title="Original Format" />
+        <link rel="up" href="../../../wiki/GuiTabs_tut" title="GuiTabs_tut" />
+        <link rel="start" href="../../../wiki.1" />
+        <link rel="stylesheet" href="../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="shortcut icon" href="../../../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../../../chrome/common/trac.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/web/Aquarius/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://research.cs.queensu.ca/home/cisc320/"><img src="http://research.cs.queensu.ca/home/cisc320/Winter2014/cisc320.jpg" alt="(please configure the [header_logo] section in trac.ini)" height="50" /></a>
+      </div>
+      <form id="search" action="http://brown.caslab.queensu.ca/web/Aquarius/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../login">Login</a></li><li><a href="../../../prefs">Preferences</a></li><li><a href="../../../wiki/TracGuide">Help/Guide</a></li><li class="last"><a href="../../../about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first active"><a href="../../../wiki.1">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="../../../wiki/GuiTabs_tut">Back to GuiTabs_tut</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="attachment">
+        <h1><a href="../../../wiki/GuiTabs_tut">GuiTabs_tut</a>: panel.png</h1>
+        <table id="info" summary="Description">
+          <tbody>
+            <tr>
+              <th scope="col">
+                File panel.png, <span title="100812 bytes">98.4 KB</span>
+                (added by shah,  <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-03-13T19%3A07%3A05-0400&amp;precision=second" title="2014-03-13T19:07:05-0400 in Timeline">3 months</a> ago)
+              </th>
+            </tr>
+            <tr>
+              <td class="message searchable">
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="preview" class="searchable">
+    <div class="image-file"><img src="../../../raw-attachment/wiki/GuiTabs_tut/panel.png" alt="panel.png" /></div>
+        </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="../../../raw-attachment/wiki/GuiTabs_tut/panel.png">Original Format</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../../../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../../../about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

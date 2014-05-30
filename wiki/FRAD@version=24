@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      FRAD – Aquarius
+    </title>
+        <link rel="search" href="http://brown.caslab.queensu.ca/web/Aquarius/search" />
+        <link rel="help" href="TracGuide" />
+        <link rel="alternate" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/FRAD?version=24&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="FRAD" title="View latest version" />
+        <link rel="next" href="FRAD@version=25" title="Version 25" />
+        <link rel="start" href="../wiki.1" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="FRAD@version=23" title="Version 23" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/web/Aquarius/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://research.cs.queensu.ca/home/cisc320/"><img src="http://research.cs.queensu.ca/home/cisc320/Winter2014/cisc320.jpg" alt="(please configure the [header_logo] section in trac.ini)" height="50" /></a>
+      </div>
+      <form id="search" action="http://brown.caslab.queensu.ca/web/Aquarius/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login">Login</a></li><li><a href="../prefs">Preferences</a></li><li><a href="TracGuide">Help/Guide</a></li><li class="last"><a href="../about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first active"><a href="../wiki.1">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="FRAD@version=23" title="Version 23">Previous Version</a></span></li><li><a href="FRAD" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="FRAD@version=25" title="Version 25">Next Version</a> &rarr;</span></li><li class="last"><a href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/FRAD?action=diff&amp;version=24">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 24 (modified by chisnell, <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-02-05T18%3A52%3A29-0500&amp;precision=second" title="2014-02-05T18:52:29-0500 in Timeline">4 months</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h2 id="FunctionalDescription">Functional Description</h2>
+<p>
+A functional description of what you are planning to build. Consider inputs and outputs and what you are trying to accomplish. A diagram might best describe these concepts.
+</p>
+<h2 id="FunctionalandNon-functionalRequirements">Functional and Non-functional Requirements</h2>
+<p>
+=Non-Functional Requirements=
+</p>
+<ul><li>Usability
+<ul><li>User must have knowledge of the game and rules
+</li><li>Interface will be similar to paper traditionally used in game, familiarity with those will be beneficial
+</li><li>Character profiles can be imported from an online character-building website
+</li></ul></li><li>Reliability
+<ul><li>Must be reliable for duration of game
+</li><li>After a failure it can be restarted, but changes made during then game may be lost in this process (changes to health/armour)
+</li><li>Data should not be lost, as some changes can carry over to additional games-
+</li></ul></li><li>Performance
+<ul><li>Should be able to make changes and have them appear by the end of turn (instantaneously would be best)
+</li><li>User tasks are turn based, with a normal turn taking a few minutes at most, must be able to affect changes during this time
+</li><li>Each user is responsible for their own character so there will not be any concurrent use
+</li><li>Latency should be minimized to ensure turns do not take a long time
+</li><li>There will be a reasonable amount of data to store per character (initial health, armour, attacks, items)
+</li></ul></li><li>Supportability
+<ul><li>Support will depend on the platform of the user
+</li></ul></li><li>Interface
+<ul><li>Data will be imported via a file obtained from a website. This file will be parsed through to obtain necessary information
+</li></ul></li><li>Packaging
+<ul><li>The installation will be done by the user, unlimited times
+</li></ul></li><li>Legal
+<ul><li>It may infringe on the Dungeons and Dragons brand, though that would need to be researched further
+</li></ul></li></ul><h2 id="UseCases">Use Cases</h2>
+<p>
+Note1: All use cases involve the player interacting with the GUI, and the GUI making the appropriate visual changes (and in some cases to the background data stored).<br />
+Note: For the sake of avoiding redundancy, all use cases share the same Participating Actor.<br />
+Participating Actor: The 'player', or owner of the character.<br />
+</p>
+<h3 id="UseHealingSurge">UseHealingSurge</h3>
+<p>
+<strong>Flow of Events</strong>: <br />
+1. The user would like to increase the health of their character.<br />
+2. The user clicks the 'Healing Surge' button.
+3. The health of the character increases by 1/4 of their HP and they lose one of their healing surges.<br />
+<strong>Entry Condition</strong>: The user must have available healing surges.<br />
+<strong>Exit Condition</strong>: The user gets visual feedback that their health has changed and that they have used a surge. <br />
+<strong>Quality Requirements</strong>: 
+Dungeons and Dragons is a fast paced game to the user must receive fast as possible visual feedback that their action has worked. The calculation for adding health must also be accurate.
+</p>
+<h3 id="AdjustHealth">AdjustHealth</h3>
+<p>
+<strong>Flow of Events</strong>: <br />
+1. A player would like to adjust their health for a reason other than using a healing surge (ex. lose health when getting hit by attack, gaining extra HP from another player).<br />
+2. The player uses a slider to increase or decrease their health by the desired amount.<br />
+<strong>Entry Condition</strong>: None.<br />
+<strong>Exit Condition</strong>: The user gets visual feedback that their health has changed. <br />
+<strong>Quality Requirements</strong>: 
+Slider must be responsive and not cumbersome to use.
+</p>
+<h3 id="UseAbility">UseAbility</h3>
+<p>
+<strong>Flow of Events</strong>: <br />1. The player would like to use an Ability from the ability tabs.
+2. The player clicks on the name of that ability on the scroll menu.<br />
+3. The player can then read more information on that ability.<br />
+4. The player click the 'Use Ability' button.<br />
+<strong>Entry Condition</strong>: The desired ability must be available for use (ex. 'daily' or 'encounter' abilities).<br />
+<strong>Exit Condition</strong>:  The player receives visual feedback that the ability has been used.<br />
+<strong>Quality Requirements</strong>: Abilities may require a lot of calculations so this needs to be done quickly as not to slow down game play.<br />
+</p>
+<h3 id="ChangeStats">ChangeStats</h3>
+<p>
+<strong>Flow of Events</strong>: <br />
+1. The user would like to change the characters stats.<br />
+2. The player click on the text field for that particular stat and types the new value.<br />
+<strong>Entry Condition</strong>: None.<br />
+<strong>Exit Condition</strong>: The program now displays the desired value.<br />
+<strong>Quality Requirements</strong>: The test field must be responsive. Also, the new value entered should immediately be used in the next calculation the program does.<br />
+</p>
+<h3 id="ChangePossessions">ChangePossessions</h3>
+<p>
+<strong>Flow of Events</strong>:<br />
+1. The user would like to add/remove/change the their items or equipment. <br />
+2. The user edits the text field to change their possession.<br />
+<strong>Entry Condition</strong>: None.<br />
+<strong>Exit Condition</strong>:  The text field now shows the desired changes.<br />
+<strong>Quality Requirements</strong>: Text entry needs to be fast and responsive.<br />
+</p>
+<h3 id="ChangeGold">ChangeGold</h3>
+<p>
+<strong>Flow of Events</strong>: <br />
+1. The user would like to reduce or increase their amount of money (copper,silver,gold,platinum). <br />
+2. The user drags the appropriate slider to adjust the amount of gold.<br />
+<strong>Entry Condition</strong>: None.<br />
+<strong>Exit Condition</strong>:  The player's money is now showing the desired amount.<br />
+<strong>Quality Requirements</strong>: Controls should be straight forward to add or remove different types of coins.<br />
+</p>
+<h3 id="NewEncounterNewDay">NewEncounter/NewDay</h3>
+<p>
+<strong>Flow of Events</strong>: <br />
+1. In the Dungeon and Dragons game, the player has entered a new encounter. This allows them to regain their 'encounter' abilities. <br />
+2. The user presses the 'New Encounter' button.<br />
+<strong>Entry Condition</strong>: None.<br />
+<strong>Exit Condition</strong>:  3. User receives visual feedback that their action has been recorded. All of the player's encounter abilities are now available for use.<br />
+<strong>Quality Requirements</strong>: Response must be fast as many field may need to be updated..<br />
+Includes <a class="missing wiki">NewDay?</a>: User can click the <a class="missing wiki">NewDay?</a> button to get back their daily powers action point.
+<br /><br />
+Please see attachment for Use Case Flow Chart. Note that this was hard to illustrate, but the back and forth red arrows indicate the player interacting with the GUI and the GUI showing the player that appropriate visual changes.<br />
+<a class="missing attachment">attachment:cisc320_aquarius_useCaseChart.pptx</a> 
+</p>
+<h2 id="SketchesofGUI">Sketches of GUI</h2>
+<p>
+Please view the <a class="missing wiki">PowerPoint?</a> presentation below for GUI design wireframes.<br />
+<a class="missing attachment">attachment:cisc320_aquarius_prelim_design.pptx</a>
+</p>
+<h2 id="ListofRoles">List of Roles</h2>
+<p>
+Sophie - Lead Architect/Parser <br />
+Mushy - GUI Architect <br />
+Rachel - Logic Architect <br />
+Catherine - GUI Architect <br />
+Torrencio - Project Manager/Logic Architect <br />
+</p>
+<h2 id="TimeLine">Time Line</h2>
+<p>
+A project plan, or time-line, for the remaining 7 weeks you have to work on this project.
+</p>
+<h3 id="Week4">Week 4</h3>
+<ul><li>Finish planning <br />
+</li><li>Finish functional analysis document <br />
+</li><li>Start researching libraries <br />
+</li><li>Learn to play Dungeon and Dragons! <br />
+</li></ul><h3 id="Week5">Week 5</h3>
+<ul><li>Start GUI Frames <br />
+</li><li>Start parsing <br />
+</li><li>Decide on data format/data structure <br />
+</li><li>Decide on libraries being used <br />
+</li></ul><h3 id="Week7-8">Week 7 - 8</h3>
+<ul><li>Logic decides what is needed from parser <br />
+</li><li>GUI decides what information they want to display <br />
+</li><li>Parser should have data in format Logic can use <br />
+</li><li>GUI gets as much data in a possible <br />
+</li></ul><h3 id="Week9">Week 9</h3>
+<ul><li>Goal is to have information going from text file all the way up to GUI <br />
+</li><li>Have a rough GUI with all of data on it <br />
+</li></ul><h3 id="Week10-11">Week 10-11</h3>
+<ul><li>add functionality to data GUI <br />
+</li><li>refine final design <br />
+</li></ul><h2 id="Glossary">Glossary</h2>
+<p>
+<strong>Dungeons and Dragons</strong>:<br />
+<strong>HP</strong>: Health Points. This is the amount of health that a character has. They lose health when being attacked and can gain health by 'healing'.<br />
+<strong>Stats</strong>: The particular strengths and weaknesses of a character. This includes how good their defenses are against attacks and which kinds of attacks they are good at (magic, physical).<br />
+<strong>Skills</strong>: The skills that a player can use and how good they are at them. This is dependent on their stats.<br />
+<strong>Healing Surge</strong>: A player has a limited number of healing surges that they can use in one day. A healing surge returns 1/4 of the player's HP.<br />
+<strong>Encounter</strong>: This is another word for 'battle'. A player enters an encounter when they start a fight with an enemy.<br />
+<strong>Action Point</strong>: Each 'turn' in Dungeons and Dragons, a player can do a minor action, move actions, or attack action. If they would like to do an additional action, they can use an action point. The player can only use one action point per day.<br />
+<strong>Ability</strong>: Abilities encompass a large variety of things that a character can do. Some examples are use an attack, heal a team member, or turn into an animal.<br />
+<strong>Daily/Encounter Abilities</strong>: Characters have powerful abilities that they can only use once per encounter or once per day.<br />
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/FRAD?version=24&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

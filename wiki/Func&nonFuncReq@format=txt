@@ -1,0 +1,39 @@
+[wiki:FunctionalDescription Functional Description] |
+[wiki:Func&nonFuncReq Functional and Non-functional Requirements] |
+[wiki:UseCases Use Cases] |
+[wiki:GUISketches Sketches of the GUI] |
+[wiki:Roles List of Roles] |
+[wiki:Timeline Timeline] |
+[wiki:Glossary Glossary of Terms][[BR]]
+
+== Functional and Non-functional Requirements ==
+=== Functional Requirements ===
+  * Read in a character profile and parse out relevant information
+  * GUI to keep track of vital information such as health, gold, and items
+  * Ability to change stats
+  * Provide information about attacks and skills
+  * Ability to restart certain stats (create new day)
+
+=== Non-Functional Requirements ===
+  * Usability
+    * User must have knowledge of the game and rules
+    * Interface will be similar to paper traditionally used in game, familiarity with those will be beneficial
+    * Character profiles can be imported from an online character-building website
+  * Reliability
+    * Must be reliable for duration of game
+    * After a failure it can be restarted, but changes made during then game may be lost in this process (changes to health/armour)
+    * Data should not be lost, as some changes can carry over to additional games-
+  * Performance
+    * Should be able to make changes and have them appear by the end of turn (instantaneously would be best)
+    * User tasks are turn based, with a normal turn taking a few minutes at most, must be able to affect changes during this time
+    * Each user is responsible for their own character so there will not be any concurrent use
+    * Latency should be minimized to ensure turns do not take a long time
+    * There will be a reasonable amount of data to store per character (initial health, armour, attacks, items)
+  * Supportability
+    * Support will depend on the platform of the user
+  * Interface
+    * Data will be imported via a file obtained from a website. This file will be parsed through to obtain necessary information
+  * Packaging
+    * The installation will be done by the user, unlimited times
+  * Legal
+    * It may infringe on the Dungeons and Dragons brand, though that would need to be researched further

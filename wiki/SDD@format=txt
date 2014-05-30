@@ -1,0 +1,280 @@
+== System Design Document ==
+
+== Table of Contents ==
+=== [#point1 Introduction] ===
+ * [#point2 Purpose of system]
+ * [#point3 Design goals]
+ * [#point4 Definition, acronyms and abbreviations]
+ * [#point5 References]
+ * [#point6 Overview]
+
+=== [#point7 Current software architecture] ===
+
+=== [#point8 Proposed software architecture] ===
+ * [#point9 Overview]
+ * [#point10 Subsystem decomposition]
+ * [#point12 Persistent data management]
+ * [#point13 Access control and security]
+ * [#point77 GUI Description and Screenshots]
+
+=== [#point33 Milestones] ===
+
+=== [#point18 Timeline] ===
+
+=== [#point19 Coding Assignments] ===
+
+=== [#point17 Glossary] === 
+----
+== Introduction == #point1
+=== Purpose of system === #point2
+The system is an application to act as an interactive character sheet for Dungeons and Dragons, specifically the 4th edition of the game. The application will be a Windows Forms Application on the Windows OS and could theoretically be expended to tablet and Microsoft Surface. The character sheet information is loaded from the Dungeons and Dragons character builder. All Player stats will be tracked and easy to modify. The application will be able to save values such as health and healing surges in order to keep track for the next play session. Gold currency and items will have an option to add, replace, or change. The Application will be able to track conditions and how they affect the character data.
+=== Design goals === #point3
+The design goals of system are:
+ * To be efficient. DnD is a fast paced games and reactions from the button must be instant.
+ * To have a Character class whose data can be saved and reloaded by the user.
+ * To allow the user to input their own data file.
+ * To split up classes in a way that parts of the project can be worked on in parallel.
+=== Definition, acronyms and abbreviations === #point4
+See [#point17 Glossary].
+=== References === #point5
+Although the team uses previous knowledge learned from the DnD books and experience playing in games, much of the information used in the character sheet can be obtained from the Character creator. To review the Character Creator use the following link:
+[http://www.wizards.com/dnd/Tool.aspx?x=dnd/4new/tool/characterbuilder][[BR]]
+
+To access the account use accountName: torrencio1[@]gmail.com
+                                                password:    Frankpencil123
+=== Overview === #point6
+This document contains the class architecture and way that they interact. It also explores the current GUI design. It also has the timeline and milestones in the group's project plan. This document is dynamic and may chance in the future and may be updated by the group.
+----
+== Current software architecture == #point7
+In progress.
+----
+== Proposed software architecture == #point8
+=== Overview === #point9
+The following classes will be used in the system:
+ * Character
+ * FileIOGUI
+ * XMLParser
+ * CharacterGUI
+ * Ability
+=== Subsystem decomposition === #point10
+Below are descriptions for each classes and how they relate to the other methods, lists of attributes, and lists of methods.[[BR]]
+'''UML DIAGRAM'''[[BR]]
+[[Image(wiki:SDD:CLASS_UML.jpg)]][[BR]]
+
+'''Sequence DIAGRAM'''[[BR]]
+[[Image(wiki:SDD:UML_SEQUENCE.jpg)]][[BR]]
+
+'''Character'''[[BR]][[BR]]
+__Description__[[BR]]
+Stores information on Character. Instantiated for XML parser. Attributes are changed by GUI class.[[BR]][[BR]]
+__Attributes__[[BR]]
+
+{{{
+string charName;
+	string charName;
+	int abilityScoreArray[6];
+	int abilityModArray[6];
+	int defensesArray[4];
+	int originalHP;
+	int currentHP;
+	int originalSurges;
+	int currentSurges;
+	int initiative;
+	int originalActionPoints;
+	int currentActionPoints;
+	int skills[17];
+	int passives[2]; // perception then insight
+	int speed;
+	string race;
+	string classStr;
+	int gold;
+	string items;
+	string vision;
+	vector<string> languages;
+	vector<string> resistances;
+	vector<vector<string>> abilities;
+	string characterNotes;
+	bool secondWindUsed;
+	string equipment[12];
+	int surgeValue;
+}}}
+
+__Methods__[[BR]]
+{{{
+	Character::Character(string cn, int asa[6], int ama[6], int def[4], int hp, int sur, int init, int ap, int ski[17], int pass[2], int spee, string ra, string cla, int gd, string ite, string vis, vector<string> lang, vector<string> resis, string cnotes, string equi[12], vector<vector<string> > abil);
+	void useActionPoint();
+	void useSecondWind();
+	void useHealingSurge();
+	void increaseHealth();
+	void decreaseHealth();
+	void newDay();
+	void shortRest();
+	void increaseGold();
+	void decreaseGold();
+	void addActionPoint();
+}}}
+
+'''FileIOGUI''' [[BR]][[BR]]
+__Description__ [[BR]]
+Window where you can input file name of DnD character file.[[BR]][[BR]] 
+
+__Attributes__[[BR]]
+fileTextBox[[BR]]
+browseButton[[BR]]
+okButton[[BR]][[BR]]
+
+__Methods__[[BR]]
+okButton LoadFile (calls XMLParser on the file in the textbox)[[BR]][[BR]]
+
+'''XMLParser'''[[BR]][[BR]]
+__Description__ [[BR]]
+Instantiated by FileIO class with the filename to be parsed. Parses DnD character XML file for desired info and instantiates a Character object with this information.[[BR]][[BR]]
+__Attributes__[[BR]]
+{{{
+        string cn;
+	int asa[6]; 
+	int ama[6]; 
+	int def[4]; 
+	int hpVal; 
+	int sur; 
+	int init; 
+	int ap; 
+	int ski[17]; 
+	int pass[2]; 
+	int spee; 
+	string ra; 
+	string cla; 
+	int gd; 
+	string ite; 
+	string vis; 
+	vector<string> lang; 
+	vector<string> resis; 
+	string cnotes;
+	string equi[12]; 
+	vector<vector<string> > abil;
+
+}}}
+[[BR]][[BR]]
+__Method__[[BR]]
+XMLParser(string fileName);[[BR]]
+Character makeCharacter();[[BR]][[BR]]
+
+'''CharacterGUI'''[[BR]][[BR]]
+__Description__ [[BR]]
+Shows information to the user. User can interact with the character data by using buttons and text fields, which call the setter methods from the Character class. Also calls the FileIO window.[[BR]][[BR]]
+__Attributes__[[BR]]
+GUI Elements[[BR]][[BR]]
+__Methods__[[BR]]
+Listeners for GUI elements
+(See Character Methods)[[BR]][[BR]]
+
+'''Ability'''[[BR]][[BR]]
+__Description__[[BR]]
+Stores data on the abilities that can be used by the character.[[BR]][[BR]]
+__Attributes__[[BR]]
+String name[[BR]]
+String description[[BR]]
+String attackInfo[[BR]]
+int damage[[BR]][[BR]]
+__Methods__[[BR]]
+void useAbility
+
+=== Persistent data management === #point12
+All of the data that is displayed on the GUI is stored in the Character class as private attributes that can be accessed with getters. These are modified by functions that are also called by the GUI. This also allows this information to be easily saved for a later session.
+=== Access control and security === #point13
+There are no real security issues with this applications, as the users passwords are not needed to get the files. This may be a future feature of the application, but at this point we are focusing on the file I/O. The file will be saved locally, which means the user will be able to edited it and cheat, the honor system is well established in DnD, so this is not a serious concern.
+=== GUI Description and Screenshots === #point77
+
+   * Stats Tab
+Contains information about the current status of the player, including health, abilities, action points etc. [[BR]]
+[[Image(wiki:SDD:GUI_Stats_Tab.jpg)]]
+   * Skills Tab
+Scores for each individual skill of the character[[BR]]
+[[Image(wiki:SDD:GUI_Skills_Tab.jpg)]]
+   * Items Tab
+List of current items and equipment. Also keeps track of gold.[[BR]]
+[[Image(wiki:SDD:GUI_Items_Tab.jpg)]]
+   * Notes Tab
+A space for the user to add any additional notes about the current game.[[BR]]
+[[Image(wiki:SDD:GUI_Notes_Tab.jpg)]]
+
+----
+== Milestones == #point33
+
+--Completed-- [[BR]]
+* Wiki Set Up and RAD - Feb 10, 2014 [[BR]]
+* Set up Environments (ALL members) - March 4, 2014 [[BR]]
+* Load XML File and Choose Nodes - March 6, 2014[[BR]]
+* SDD Document - March 9, 2014[[BR]]
+* Set up Basic GUI Framework - March 20, 2014[[BR]]
+[[BR]]
+--Upcoming-- [[BR]]
+* Add Functionality to GUI [[BR]]
+* Art and Final Touches [[BR]]
+* Testing [[BR]] 
+
+----
+== Timeline == #point18
+
+=== Week 4 ===
+
+ * Finish planning [[BR]]
+ * Finish functional analysis document [[BR]]
+ * Start researching libraries [[BR]]
+ * Learn to play Dungeon and Dragons! [[BR]]
+
+=== Week 5 ===
+ * Start GUI Frames [[BR]]
+ * Start parsing [[BR]]
+ * Decide on data format/data structure [[BR]]
+ * Decide on libraries being used [[BR]]
+
+=== Week 7 - 8 ===
+ * Logic decides what is needed from parser [[BR]]
+ * GUI decides what information they want to display [[BR]]
+ * GUI gets as much data in a possible [[BR]]
+
+=== Week 9 ===
+ * Goal is to have information going from text file all the way up to GUI [[BR]]
+ * Have a rough GUI with all of data on it [[BR]]
+ '''MILESTONE: Set Up Basic GUI Framework'''
+
+=== Week 10 ===
+ * add functionality to data GUI [[BR]]
+ * Parser should have data in format GUI can use [[BR]]
+ '''MILESTONE: Add Functionality to GUI''' [[BR]]
+ '''MILESTONE: Load XML File and Choose Nodes'''
+
+=== Week 11 ===
+ * refine GUI design [[BR]]
+ * final testing [[BR]]
+ ''' MILESTONE: Art and Final Touches'''
+
+== Coding Assignments == #point19
+Sophie - in charge of the XMLPARSER class and FILE I/O. [[BR]][[BR]]
+Torrencio - in charge of the CHARACTER class. [[BR]][[BR]]
+Rachel - working on the GUI class and helping with the CHARACTER class. [[BR]][[BR]]
+Catherine - working on the GUI class, specifically skills and details. [[BR]][[BR]]
+Mushy - working on the ABILITIES class.
+----
+== Glossary == #point17
+'''Dice Values''': when referring to dice they are abbreviated as ndM, where n is the amount of dice, and M is amount of sides on the die.[[BR]]
+'''Condition''': something applied to character that affects how the character behaves, such as blinded, the character cannot see and limits their ability to attack.[[BR]]
+'''Standard''': one of the three actions allowed each turn, action are hierarchical, from standard->move->minor. So a standard can be used as a move or a minor, but not the other way.[[BR]]
+Every turn one of each is awarded, the standard is usually the main move of the turn.[[BR]]
+'''Move''': See Standard in regards to action information, move action is the action that allows a character to move.[[BR]]
+'''Minor''': See Standard in regards to action information, a minor action is a less powerful action and contributes in smaller way, such as healing an ally.[[BR]]
+'''HP''': Health Points. This is the amount of health that a character has. They lose health when being attacked and can gain health by 'healing'.[[BR]]
+'''Stats''': The particular strengths and weaknesses of a character. This includes how good their defenses are against attacks and which kinds of attacks they are good at (magic, physical).[[BR]]
+'''Skills''': The skills that a player can use and how good they are at them. This is dependent on their stats.[[BR]]
+'''Healing Surge''': A player has a limited number of healing surges that they can use in one day. A healing surge returns 1/4 of the player's HP.[[BR]]
+'''Encounter''': This is another word for 'battle'. A player enters an encounter when they start a fight with an enemy. This could also refer to a skill challenge, in which certain skills [[BR]]
+are tested in an event, an example would be riding a ship in a storm, characters would have to make skill checks to stay on the boat.[[BR]]
+'''Defence''': Defense is the characters ability to avoid damage. There are four defense categories; AC(Armour Class), Reflex(REF), Fortitude(FORT), Will(WILL)[[BR]]
+'''AC''': Armour Class is the characters ability to reduce damage using their Armour. Attacks that attack AC are generally force attacks such as getting hit by a sword.[[BR]]
+'''FORT''': Fortitude is the characters ability to withstand damage due to their physical stamina. A common attack against fort would be a poison attack, poison tests the physical stamina.[[BR]]
+'''Will''': Will is the characters ability to withstand damage due to their mental toughness. Generally these are attacks that attempt to corrupt a characters mind, such as a succubus doing, well succubus things.[[BR]]
+'''REF''': Reflex is the characters ability to withstand damage due to their agility or quick reactions. An example would be dodging an arrow.[[BR]]
+'''Action Point''': Each 'turn' in Dungeons and Dragons, a player can do a minor action, move actions, or attack action. If they would like to do an additional action, they can use an action point. The player can only use one action point per encounter.[[BR]]
+'''Ability''': Abilities encompass a large variety of things that a character can do. Some examples are use an attack, heal a team member, or turn into an animal.[[BR]]
+'''Daily/Encounter Abilities''': Characters have powerful abilities that they can only use once per encounter or once per day.[[BR]]

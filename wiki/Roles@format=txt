@@ -1,0 +1,14 @@
+[wiki:FunctionalDescription Functional Description] |
+[wiki:Func&nonFuncReq Functional and Non-functional Requirements] |
+[wiki:UseCases Use Cases] |
+[wiki:GUISketches Sketches of the GUI] |
+[wiki:Roles List of Roles] |
+[wiki:Timeline Timeline] |
+[wiki:Glossary Glossary of Terms][[BR]]
+== List of Roles ==
+
+Sophie - Lead Architect/Parser [[BR]]
+Mushy - GUI Architect [[BR]]
+Rachel - Logic Architect [[BR]]
+Catherine - GUI Architect [[BR]]
+Torrencio - Project Manager/Logic Architect [[BR]]

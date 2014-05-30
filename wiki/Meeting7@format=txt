@@ -1,0 +1,25 @@
+= Meeting 7 - Mar 6 =
+'''This Meeting'''
+   * What is string with a carat? That is the data type in the GUI labels.
+      * String with carat = managed string, system string.
+   * GUI
+      * Stat and Skills are designed, little to no functionality
+      * Abilities is empty, Mushy will have it designed soon
+      * Items/Gold and Character Notes are designed,  little to no functionality
+      * Details link?
+         * Not worried about adding items yet, just uploading from XML
+      * Combining Tabs into one GUI
+         * Need to ensure no variable names clash from tab to tab
+   * XML 
+      * Created level 1 character
+      * Found key nodes
+   * Document
+      * Recreate use cases
+      * Sequence Diagrams - Tori
+      * Identify attributes and method
+      * Screen Shots of GUI – GUI people
+      * Use tickets to split up tasks
+'''Next Meeting'''
+      * Meeting tomorrow
+      * Split up SDD Document among team
+      * 3 to 4 at Bain

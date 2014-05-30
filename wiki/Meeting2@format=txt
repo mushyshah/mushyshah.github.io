@@ -1,0 +1,32 @@
+= Meeting 2 - Jan 23 =
+
+== This Meeting ==
+   * Need new alternate group meeting time
+      * Not Wednesday
+      * '''Tuesday 1:30 – 3:30''' - Best time
+      * Friday 2:30 – 4:30
+
+   * Log into Wiki via Orange blueprint 
+   * Decide on Wiki headings
+      * Group Members
+         * Individual wiki pages/ diaries here
+         * Project Description
+      * General idea for project
+      * Meeting Notes
+         * Page for each meeting
+      * System Architecture
+         * How project is being designed
+      * Group Resources
+         * Helpful links people find
+
+== For next week ==
+   * Group meeting to learn D&D?
+   * SVN
+      * Tortoise SVN 1.7.4 is the version we need
+      * Get SVN set up
+   * Make an individual page
+      * What code you worked on/specific link to code/tickets
+   * Decide preference for GUI/parsing/logic
+      * Different people to work on different components
+   * Run Hello World in Visual Studio
+

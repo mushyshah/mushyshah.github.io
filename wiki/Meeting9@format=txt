@@ -1,0 +1,18 @@
+== Meeting 9 - March 20 ==
+'''This Meeting:'''
+   * Dice roll is done
+   * Added Surge value label, New Encounter  and End turn buttons to GUI
+   * Abilities is done need to combine with GUI
+   * Character .h is done and .cpp is started
+   * Combine Abilities Tab with GUI
+   * Logic behind abilities (some can be used only once, some can be used anytime)
+'''For Next Meeting:'''
+   * Character Class done and test Character object made
+   * All GUI tabs combined
+   * Buttons with handlers done
+      * Action Points - Rachel
+      * Second Wind - Catherine
+      * Use Surge - Catherine
+      * New Day – Rachel and Tori
+      * Short Rest  - Rachel and Tori
+      * Use Ability – Mushy

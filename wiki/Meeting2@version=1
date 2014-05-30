@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      Meeting2 – Aquarius
+    </title>
+        <link rel="search" href="http://brown.caslab.queensu.ca/web/Aquarius/search" />
+        <link rel="help" href="TracGuide" />
+        <link rel="alternate" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/Meeting2?version=1&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="Meeting2" title="View latest version" />
+        <link rel="start" href="../wiki.1" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/web/Aquarius/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://research.cs.queensu.ca/home/cisc320/"><img src="http://research.cs.queensu.ca/home/cisc320/Winter2014/cisc320.jpg" alt="(please configure the [header_logo] section in trac.ini)" height="50" /></a>
+      </div>
+      <form id="search" action="http://brown.caslab.queensu.ca/web/Aquarius/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login">Login</a></li><li><a href="../prefs">Preferences</a></li><li><a href="TracGuide">Help/Guide</a></li><li class="last"><a href="../about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first active"><a href="../wiki.1">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Version</span></li><li><a href="Meeting2" title="View latest version">View Latest Version</a></li><li><span class="missing">Next Version &rarr;</span></li><li class="last"><a href="Meeting2@action=diff&amp;version=1">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 1 (modified by chisnell, <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-01-30T13%3A46%3A43-0500&amp;precision=second" title="2014-01-30T13:46:43-0500 in Timeline">4 months</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="Meeting2-Jan23">Meeting 2 - Jan 23</h1>
+<h2 id="ThisMeeting">This Meeting</h2>
+<ul><li>Need new alternate group meeting time
+<ul><li>Not Wednesday
+</li><li><strong>Tuesday 1:30 – 3:30</strong> - Best time
+</li><li>Friday 2:30 – 4:30
+</li></ul></li></ul><ul><li>Log into Wiki via Orange blueprint 
+</li><li>Decide on Wiki headings
+<ul><li>Group Members
+<ul><li>Individual wiki pages/ diaries here
+</li><li>Project Description
+</li></ul></li><li>General idea for project
+</li><li>Meeting Notes
+<ul><li>Page for each meeting
+</li></ul></li><li>System Architecture
+<ul><li>How project is being designed
+</li></ul></li><li>Group Resources
+<ul><li>Helpful links people find
+</li></ul></li></ul></li></ul><h2 id="Fornextweek">For next week</h2>
+<ul><li>Group meeting to learn D&amp;D?
+</li><li>SVN
+<ul><li>Tortoise SVN 1.7.4 is the version we need
+</li><li>Get SVN set up
+</li></ul></li><li>Make an individual page
+<ul><li>What code you worked on/specific link to code/tickets
+</li></ul></li><li>Decide preference for GUI/parsing/logic
+<ul><li>Different people to work on different components
+</li></ul></li><li>Run Hello World in Visual Studio
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/Meeting2?version=1&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

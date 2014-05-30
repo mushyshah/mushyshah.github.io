@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      FunctionalDescription – Aquarius
+    </title>
+        <link rel="search" href="http://brown.caslab.queensu.ca/web/Aquarius/search" />
+        <link rel="help" href="TracGuide" />
+        <link rel="alternate" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/FunctionalDescription?version=24&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="FunctionalDescription" title="View latest version" />
+        <link rel="next" href="FunctionalDescription@version=25" title="Version 25" />
+        <link rel="start" href="../wiki.1" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="FunctionalDescription@version=23" title="Version 23" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/web/Aquarius/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://research.cs.queensu.ca/home/cisc320/"><img src="http://research.cs.queensu.ca/home/cisc320/Winter2014/cisc320.jpg" alt="(please configure the [header_logo] section in trac.ini)" height="50" /></a>
+      </div>
+      <form id="search" action="http://brown.caslab.queensu.ca/web/Aquarius/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login">Login</a></li><li><a href="../prefs">Preferences</a></li><li><a href="TracGuide">Help/Guide</a></li><li class="last"><a href="../about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first active"><a href="../wiki.1">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="FunctionalDescription@version=23" title="Version 23">Previous Version</a></span></li><li><a href="FunctionalDescription" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="FunctionalDescription@version=25" title="Version 25">Next Version</a> &rarr;</span></li><li class="last"><a href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/FunctionalDescription?action=diff&amp;version=24">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 24 (modified by vigilante, <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-02-05T22%3A41%3A04-0500&amp;precision=second" title="2014-02-05T22:41:04-0500 in Timeline">4 months</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+<a class="wiki" href="FunctionalDescription">Functional Description</a> |
+<a class="wiki" href="Func&amp;nonFuncReq">Functional and Non-functional Requirements</a> |
+<a class="wiki" href="UseCases">Use Cases</a> |
+<a class="wiki" href="GUISketches">Sketches of the GUI</a> |
+<a class="wiki" href="Roles">List of Roles</a> |
+<a class="wiki" href="Timeline">Timeline</a> |
+<a class="wiki" href="Glossary">Glossary of Terms</a><br />
+</p>
+<p>
+<strong>Functional Description</strong>
+</p>
+<p>
+Design an application to act as an interactive character sheet for Dungeons and Dragons, specifically the 4th edition of the game.
+The application will ideally work on a <br />
+tablet or phone interface with the windows operating system. The character sheet information is loaded from the Dungeons and Dragons character builder<br />
+A Link to the builder can be found here: <a class="ext-link" href="http://www.wizards.com/dnd/Tool.aspx?x=dnd/4new/tool/characterbuilder"><span class="icon"> </span>http://www.wizards.com/dnd/Tool.aspx?x=dnd/4new/tool/characterbuilder</a><br />
+</p>
+<p>
+To access the account use accountName: torrencio1[@]gmail.com
+</p>
+<blockquote>
+<p>
+password:    Frankpencil123
+</p>
+</blockquote>
+<p>
+This character builder creates an XML file, this file will be parsed through in order to gather required information. <br />
+The application will only allow for one character sheet to be open at a time, but it should be easy to load in different character sheets.<br />
+All Player stats must be tracked and easy to modify.
+The application needs to saves values such as health and healing surges in order to keep track for the next play session.<br />
+When playing DnD, the application should be able to keep track of which abilities are available, and should handle any calculations needed for the ability including the dice roll.<br />
+The dice roll should be optional, some people just like dice. With that, there should also be an option for free dice, to roll a die of any type and add any required modifiers.<br />
+There will be an option to let the character sheet know that a new turn has come up and the move, standard and minor are available.<br />
+The application needs to have the ability to modify any of the main data depending on what happens in the game.<br />
+Gold currency and items need to have an option to add, replace, or change.<br />
+The Application must be able to track conditions and how they affect the character data.<br />
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/FunctionalDescription?version=24&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

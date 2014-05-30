@@ -1,0 +1,92 @@
+[wiki:FunctionalDescription Functional Description] |
+[wiki:Func&nonFuncReq Functional and Non-functional Requirements] |
+[wiki:UseCases Use Cases] |
+[wiki:GUISketches Sketches of the GUI] |
+[wiki:Roles List of Roles] |
+[wiki:Timeline Timeline] |
+[wiki:Glossary Glossary of Terms][[BR]]
+== Use Cases == 
+Note1: All use cases involve the player interacting with the GUI, and the GUI making the appropriate visual changes (and in some cases to the background data stored).[[BR]]
+Note: For the sake of avoiding redundancy, all use cases share the same Participating Actor.[[BR]]
+Participating Actor: The 'player', or owner of the character.[[BR]]
+=== !AddCondition ===
+'''Flow of Events''': [[BR]]
+1. The user would like to apply a condition to their character. [[BR]]
+2. The user chooses from a list of conditions that will affect the player accordingly. [[BR]]
+'''Entry Condition''': None.[[BR]]
+'''Exit Condition''':  The player data will be adjusted according to condition applied.[[BR]]
+'''Quality Requirements''': Controls should be straight forward in selecting conditions and should provide the user with information about the condition.[[BR]]
+
+
+=== !RollDice ===
+'''Flow of Events''': [[BR]]
+1. Roll a Die [[BR]]
+2. The user chooses from a list of Dice to roll with an amount of each. [[BR]]
+'''Entry Condition''': The dice must be from the possible set of dice(d4,d6,d8,d10,d12,d20,d100) and any modifier to add to the roll[[BR]]
+'''Exit Condition''':  A value of the roll/rolls plus the modifier.[[BR]]
+'''Quality Requirements''': Controls should be straight forward in selecting conditions and should provide the user with information about the condition.[[BR]]
+
+=== !UseHealingSurge ===
+'''Flow of Events''': [[BR]]
+1. The user would like to increase the health of their character.[[BR]]
+2. The user clicks the 'Healing Surge' button.
+3. The health of the character increases by 1/4 of their HP and they lose one of their healing surges.[[BR]]
+'''Entry Condition''': The user must have available healing surges.[[BR]]
+'''Exit Condition''': The user gets visual feedback that their health has changed and that they have used a surge. [[BR]]
+'''Quality Requirements''': 
+Dungeons and Dragons is a fast paced game to the user must receive fast as possible visual feedback that their action has worked. The calculation for adding health must also be accurate.
+
+=== !AdjustHealth ===
+'''Flow of Events''': [[BR]]
+1. A player would like to adjust their health for a reason other than using a healing surge (ex. lose health when getting hit by attack, gaining extra HP from another player).[[BR]]
+2. The player uses a slider to increase or decrease their health by the desired amount.[[BR]]
+'''Entry Condition''': None.[[BR]]
+'''Exit Condition''': The user gets visual feedback that their health has changed. [[BR]]
+'''Quality Requirements''': 
+Slider must be responsive and not cumbersome to use.
+
+=== !UseAbility ===
+'''Flow of Events''': [[BR]]1. The player would like to use an Ability from the ability tabs.
+2. The player clicks on the name of that ability on the scroll menu.[[BR]]
+3. The player can then read more information on that ability.[[BR]]
+4. The player click the 'Use Ability' button.[[BR]]
+'''Entry Condition''': The desired ability must be available for use (ex. 'daily' or 'encounter' abilities).[[BR]]
+'''Exit Condition''':  The player receives visual feedback that the ability has been used.[[BR]]
+'''Quality Requirements''': Abilities may require a lot of calculations so this needs to be done quickly as not to slow down game play.[[BR]]
+
+
+=== !ChangeStats ===
+'''Flow of Events''': [[BR]]
+1. The user would like to change the characters stats.[[BR]]
+2. The player click on the text field for that particular stat and types the new value.[[BR]]
+'''Entry Condition''': None.[[BR]]
+'''Exit Condition''': The program now displays the desired value.[[BR]]
+'''Quality Requirements''': The test field must be responsive. Also, the new value entered should immediately be used in the next calculation the program does.[[BR]]
+
+=== !ChangePossessions ===
+'''Flow of Events''':[[BR]]
+1. The user would like to add/remove/change the their items or equipment. [[BR]]
+2. The user edits the text field to change their possession.[[BR]]
+'''Entry Condition''': None.[[BR]]
+'''Exit Condition''':  The text field now shows the desired changes.[[BR]]
+'''Quality Requirements''': Text entry needs to be fast and responsive.[[BR]]
+
+=== !ChangeGold ===
+'''Flow of Events''': [[BR]]
+1. The user would like to reduce or increase their amount of money (copper,silver,gold,platinum). [[BR]]
+2. The user drags the appropriate slider to adjust the amount of gold.[[BR]]
+'''Entry Condition''': None.[[BR]]
+'''Exit Condition''':  The player's money is now showing the desired amount.[[BR]]
+'''Quality Requirements''': Controls should be straight forward to add or remove different types of coins.[[BR]]
+
+=== !NewEncounter/NewDay ===
+'''Flow of Events''': [[BR]]
+1. In the Dungeon and Dragons game, the player has entered a new encounter. This allows them to regain their 'encounter' abilities. [[BR]]
+2. The user presses the 'New Encounter' button.[[BR]]
+'''Entry Condition''': None.[[BR]]
+'''Exit Condition''':  3. User receives visual feedback that their action has been recorded. All of the player's encounter abilities are now available for use.[[BR]]
+'''Quality Requirements''': Response must be fast as many field may need to be updated..[[BR]]
+Includes NewDay: User can click the NewDay button to get back their daily powers action point.
+[[BR]][[BR]]
+Please see attachment for Use Case Flow Chart. Note that this was hard to illustrate, but the back and forth red arrows indicate the player interacting with the GUI and the GUI showing the player that appropriate visual changes.[[BR]]
+attachment:cisc320_aquarius_useCaseChart.pptx 

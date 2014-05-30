@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      UseCases – Aquarius
+    </title>
+        <link rel="search" href="http://brown.caslab.queensu.ca/web/Aquarius/search" />
+        <link rel="help" href="TracGuide" />
+        <link rel="alternate" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/UseCases?version=2&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="UseCases" title="View latest version" />
+        <link rel="next" href="UseCases@version=3" title="Version 3" />
+        <link rel="start" href="../wiki.1" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="UseCases@version=1" title="Version 1" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/web/Aquarius/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://research.cs.queensu.ca/home/cisc320/"><img src="http://research.cs.queensu.ca/home/cisc320/Winter2014/cisc320.jpg" alt="(please configure the [header_logo] section in trac.ini)" height="50" /></a>
+      </div>
+      <form id="search" action="http://brown.caslab.queensu.ca/web/Aquarius/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login">Login</a></li><li><a href="../prefs">Preferences</a></li><li><a href="TracGuide">Help/Guide</a></li><li class="last"><a href="../about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first active"><a href="../wiki.1">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="UseCases@version=1" title="Version 1">Previous Version</a></span></li><li><a href="UseCases" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="UseCases@version=3" title="Version 3">Next Version</a> &rarr;</span></li><li class="last"><a href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/UseCases?action=diff&amp;version=2">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 2 (modified by twiss, <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-02-05T20%3A07%3A42-0500&amp;precision=second" title="2014-02-05T20:07:42-0500 in Timeline">4 months</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+<a class="wiki" href="FunctionalDescription">Functional Description</a><br />
+<a class="wiki" href="Func&amp;nonFuncReq">Functional and Non-functional Requirements</a><br />
+<a class="wiki" href="UseCases">Use Cases</a><br />
+<a class="wiki" href="Roles">List of Roles</a><br />
+<a class="wiki" href="Timeline">Timeline</a><br />
+<a class="wiki" href="Glossary">Glossary of Terms</a><br /><br />
+</p>
+<h2 id="UseCases">Use Cases</h2>
+<p>
+Note1: All use cases involve the player interacting with the GUI, and the GUI making the appropriate visual changes (and in some cases to the background data stored).<br />
+Note: For the sake of avoiding redundancy, all use cases share the same Participating Actor.<br />
+Participating Actor: The 'player', or owner of the character.<br />
+</p>
+<h3 id="UseHealingSurge">UseHealingSurge</h3>
+<p>
+<strong>Flow of Events</strong>: <br />
+1. The user would like to increase the health of their character.<br />
+2. The user clicks the 'Healing Surge' button.
+3. The health of the character increases by 1/4 of their HP and they lose one of their healing surges.<br />
+<strong>Entry Condition</strong>: The user must have available healing surges.<br />
+<strong>Exit Condition</strong>: The user gets visual feedback that their health has changed and that they have used a surge. <br />
+<strong>Quality Requirements</strong>: 
+Dungeons and Dragons is a fast paced game to the user must receive fast as possible visual feedback that their action has worked. The calculation for adding health must also be accurate.
+</p>
+<h3 id="AdjustHealth">AdjustHealth</h3>
+<p>
+<strong>Flow of Events</strong>: <br />
+1. A player would like to adjust their health for a reason other than using a healing surge (ex. lose health when getting hit by attack, gaining extra HP from another player).<br />
+2. The player uses a slider to increase or decrease their health by the desired amount.<br />
+<strong>Entry Condition</strong>: None.<br />
+<strong>Exit Condition</strong>: The user gets visual feedback that their health has changed. <br />
+<strong>Quality Requirements</strong>: 
+Slider must be responsive and not cumbersome to use.
+</p>
+<h3 id="UseAbility">UseAbility</h3>
+<p>
+<strong>Flow of Events</strong>: <br />1. The player would like to use an Ability from the ability tabs.
+2. The player clicks on the name of that ability on the scroll menu.<br />
+3. The player can then read more information on that ability.<br />
+4. The player click the 'Use Ability' button.<br />
+<strong>Entry Condition</strong>: The desired ability must be available for use (ex. 'daily' or 'encounter' abilities).<br />
+<strong>Exit Condition</strong>:  The player receives visual feedback that the ability has been used.<br />
+<strong>Quality Requirements</strong>: Abilities may require a lot of calculations so this needs to be done quickly as not to slow down game play.<br />
+</p>
+<h3 id="ChangeStats">ChangeStats</h3>
+<p>
+<strong>Flow of Events</strong>: <br />
+1. The user would like to change the characters stats.<br />
+2. The player click on the text field for that particular stat and types the new value.<br />
+<strong>Entry Condition</strong>: None.<br />
+<strong>Exit Condition</strong>: The program now displays the desired value.<br />
+<strong>Quality Requirements</strong>: The test field must be responsive. Also, the new value entered should immediately be used in the next calculation the program does.<br />
+</p>
+<h3 id="ChangePossessions">ChangePossessions</h3>
+<p>
+<strong>Flow of Events</strong>:<br />
+1. The user would like to add/remove/change the their items or equipment. <br />
+2. The user edits the text field to change their possession.<br />
+<strong>Entry Condition</strong>: None.<br />
+<strong>Exit Condition</strong>:  The text field now shows the desired changes.<br />
+<strong>Quality Requirements</strong>: Text entry needs to be fast and responsive.<br />
+</p>
+<h3 id="ChangeGold">ChangeGold</h3>
+<p>
+<strong>Flow of Events</strong>: <br />
+1. The user would like to reduce or increase their amount of money (copper,silver,gold,platinum). <br />
+2. The user drags the appropriate slider to adjust the amount of gold.<br />
+<strong>Entry Condition</strong>: None.<br />
+<strong>Exit Condition</strong>:  The player's money is now showing the desired amount.<br />
+<strong>Quality Requirements</strong>: Controls should be straight forward to add or remove different types of coins.<br />
+</p>
+<h3 id="NewEncounterNewDay">NewEncounter/NewDay</h3>
+<p>
+<strong>Flow of Events</strong>: <br />
+1. In the Dungeon and Dragons game, the player has entered a new encounter. This allows them to regain their 'encounter' abilities. <br />
+2. The user presses the 'New Encounter' button.<br />
+<strong>Entry Condition</strong>: None.<br />
+<strong>Exit Condition</strong>:  3. User receives visual feedback that their action has been recorded. All of the player's encounter abilities are now available for use.<br />
+<strong>Quality Requirements</strong>: Response must be fast as many field may need to be updated..<br />
+Includes <a class="missing wiki">NewDay?</a>: User can click the <a class="missing wiki">NewDay?</a> button to get back their daily powers action point.
+<br /><br />
+Please see attachment for Use Case Flow Chart. Note that this was hard to illustrate, but the back and forth red arrows indicate the player interacting with the GUI and the GUI showing the player that appropriate visual changes.<br />
+<a class="attachment" href="../attachment/wiki/UseCases/cisc320_aquarius_useCaseChart.pptx" title="Attachment 'cisc320_aquarius_useCaseChart.pptx' in UseCases">attachment:cisc320_aquarius_useCaseChart.pptx</a><span class="noprint"> <a class="trac-rawlink" href="../raw-attachment/wiki/UseCases/cisc320_aquarius_useCaseChart.pptx" title="Download"><img src="../chrome/common/download.png" alt="Download"/></a></span> 
+</p>
+
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="../attachment/wiki/UseCases/cisc320_aquarius_useCaseChart.pptx" title="View attachment">cisc320_aquarius_useCaseChart.pptx</a>
+      <a href="../raw-attachment/wiki/UseCases/cisc320_aquarius_useCaseChart.pptx" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="76177 bytes">74.4 KB</span>) - added by <em>beland</em>
+      <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-02-05T22%3A49%3A30-0500&amp;precision=second" title="2014-02-05T22:49:30-0500 in Timeline">4 months</a> ago.
+                <q>Chart edited to add Tori's new use cares.</q>
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/UseCases?version=2&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      Meeting3 – Aquarius
+    </title>
+        <link rel="search" href="http://brown.caslab.queensu.ca/web/Aquarius/search" />
+        <link rel="help" href="TracGuide" />
+        <link rel="alternate" href="Meeting3@format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../wiki.1" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/web/Aquarius/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://research.cs.queensu.ca/home/cisc320/"><img src="http://research.cs.queensu.ca/home/cisc320/Winter2014/cisc320.jpg" alt="(please configure the [header_logo] section in trac.ini)" height="50" /></a>
+      </div>
+      <form id="search" action="http://brown.caslab.queensu.ca/web/Aquarius/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login">Login</a></li><li><a href="../prefs">Preferences</a></li><li><a href="TracGuide">Help/Guide</a></li><li class="last"><a href="../about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first active"><a href="../wiki.1">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="WikiStart">Start Page</a></li><li><a href="TitleIndex">Index</a></li><li><a href="Meeting3@action=history">History</a></li><li class="last"><a href="Meeting3@action=diff&amp;version=1">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <h1 id="Meeting3-Jan30">Meeting 3 - Jan 30</h1>
+<h2 id="ThisMeeting">This Meeting</h2>
+<ul><li>Decide what to do
+<ul><li>Logic
+<ul><li>Tori
+</li><li>Rachel
+</li></ul></li><li>GUI
+<ul><li>Catherine
+</li><li>Mushy
+</li></ul></li><li>Parsing
+<ul><li>Sophie
+</li></ul></li><li>Designing
+<ul><li>Everyone
+</li></ul></li></ul></li></ul><ul><li>Make initial outline of GUI on power-point
+<ul><li>Stats are related to other things, need to incorporate that
+</li><li>New day button to reset stats
+</li><li>Dice roll button 
+</li><li>Uploaded to wiki
+</li></ul></li></ul><ul><li>Meet this Friday to play D&amp;D
+</li></ul><p>
+<span class="underline">Requirements Analysis Document</span>
+</p>
+<ul><li>A functional description of what you are planning to build. Consider inputs and outputs and what you are trying to accomplish. A diagram might best describe these concepts.
+<ul><li>Tori
+</li></ul></li><li>A list of functional and non-functional requirements.
+<ul><li>Catherine
+</li></ul></li><li>A least one use case. You must have enough use cases that all of the necessary functionality is described. If you have several use cases, you will need a use case diagram to show how they relate.
+<ul><li>Sophie, Rachel, Tori
+</li></ul></li><li>Sketches or prototypes of the GUI interface (all windows) along with a description of how the user will navigate through the interface.
+<ul><li>Sophie
+</li></ul></li><li>A list of the roles assigned to each team member.
+<ul><li>Sophie
+</li></ul></li><li>A project plan, or time-line, for the remaining 7 weeks you have to work on this project.
+<ul><li>All
+</li></ul></li><li>A Glossary of terms used in your functional description.
+<ul><li>Tori
+</li></ul></li></ul><h2 id="Fornextmeeting">For next meeting</h2>
+<ul><li>Update Project description (Tori)
+</li><li>Post character profiles on wiki so we can see what they include (Tori)
+</li><li>Link to character-building site
+</li><li>Work on Requirements Analysis Document
+</li><li>Meeting Tomorrow to learn D&amp;D
+<ul><li>2:30
+</li><li>Walter Light
+</li></ul></li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="Meeting3@format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

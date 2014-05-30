@@ -1,0 +1,14 @@
+Project manager[[BR]]
+'''TO DO'''[[BR]]
+Write project description-done[[BR]]
+make glossary of DND terms-done[[BR]]
+create dice rolling functionality-done[[BR]]
+figure out ability class requirements-working, have this mostly done its getting info from parsing[[BR]]
+parse file to get ability information-having issues because abilities have multiple properties, [[BR]]
+just trying to create a clean way of doing this.[[BR]]
+got gui cleaned up, having some issues loading abilities in, there are so many random properties that needed to be accounted for.[[BR]]
+
+
+
+
+

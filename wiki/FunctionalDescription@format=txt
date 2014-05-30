@@ -1,0 +1,42 @@
+[wiki:FunctionalDescription Functional Description] |
+[wiki:Func&nonFuncReq Functional and Non-functional Requirements] |
+[wiki:UseCases Use Cases] |
+[wiki:GUISketches Sketches of the GUI] |
+[wiki:Roles List of Roles] |
+[wiki:Timeline Timeline] |
+[wiki:Glossary Glossary of Terms][[BR]]
+
+'''Functional Description'''
+
+
+
+
+Design an application to act as an interactive character sheet for Dungeons and Dragons, specifically the 4th edition of the game.
+The application will ideally work on a [[BR]]
+tablet or phone interface with the windows operating system. The character sheet information is loaded from the Dungeons and Dragons character builder[[BR]]
+A Link to the builder can be found here: [http://www.wizards.com/dnd/Tool.aspx?x=dnd/4new/tool/characterbuilder][[BR]]
+
+To access the account use accountName: torrencio1[@]gmail.com
+                                                password:    Frankpencil123
+This character builder creates an XML file, this file will be parsed through in order to gather required information. [[BR]]
+The application will only allow for one character sheet to be open at a time, but it should be easy to load in different character sheets.[[BR]][[BR]]
+
+All Player stats must be tracked and easy to modify.
+The application needs to saves values such as health and healing surges in order to keep track for the next play session.[[BR]]
+Gold currency and items need to have an option to add, replace, or change.[[BR]]
+The Application must be able to track conditions and how they affect the character data.[[BR]]
+[[BR]]
+
+When playing DnD, the application should be able to keep track of which abilities are available, and should handle any calculations needed for the ability including the dice roll.[[BR]]
+The dice roll should be optional, some people just like dice. With that, there should also be an option for free dice, to roll a die of any type and add any required modifiers.[[BR]][[BR]]
+
+There will be an option to let the character sheet know that a new turn has come up and the move, standard and minor are available.[[BR]]
+The application needs to have the ability to modify any of the main data depending on what happens in the game.[[BR]]
+
+
+
+
+
+
+
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      Aquarius
+    </title>
+        <link rel="search" href="http://brown.caslab.queensu.ca/web/Aquarius/search" />
+        <link rel="help" href="TracGuide" />
+        <link rel="alternate" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/WikiStart?version=29&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="WikiStart" title="View latest version" />
+        <link rel="next" href="WikiStart@version=30" title="Version 30" />
+        <link rel="start" href="../wiki.1" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="WikiStart@version=28" title="Version 28" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/web/Aquarius/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://research.cs.queensu.ca/home/cisc320/"><img src="http://research.cs.queensu.ca/home/cisc320/Winter2014/cisc320.jpg" alt="(please configure the [header_logo] section in trac.ini)" height="50" /></a>
+      </div>
+      <form id="search" action="http://brown.caslab.queensu.ca/web/Aquarius/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login">Login</a></li><li><a href="../prefs">Preferences</a></li><li><a href="TracGuide">Help/Guide</a></li><li class="last"><a href="../about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first active"><a href="../wiki.1">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="WikiStart@version=28" title="Version 28">Previous Version</a></span></li><li><a href="WikiStart" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="WikiStart@version=30" title="Version 30">Next Version</a> &rarr;</span></li><li class="last"><a href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/WikiStart?action=diff&amp;version=29">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 29 (modified by chisnell, <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-02-06T16%3A03%3A48-0500&amp;precision=second" title="2014-02-06T16:03:48-0500 in Timeline">4 months</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="TeamAquarius"><span class="underline"><i>Team Aquarius</i></span></h1>
+<p>
+<a style="padding:0; border:none" href="http://www.nerdist.com/wp-content/uploads/2013/05/dungeons-and-dragons-banner.jpg"><img src="http://www.nerdist.com/wp-content/uploads/2013/05/dungeons-and-dragons-banner.jpg" alt="http://www.nerdist.com/wp-content/uploads/2013/05/dungeons-and-dragons-banner.jpg" title="http://www.nerdist.com/wp-content/uploads/2013/05/dungeons-and-dragons-banner.jpg" /></a>
+</p>
+<h2 id="GroupMembers">Group Members</h2>
+<ul><li><a class="wiki" href="SophieBeland">Sophie Beland</a>  <i>Lead Architect/Parsing</i>
+</li><li><a class="wiki" href="TorrencioVigilante">Torrencio Vigilante</a><i>Project Manager/Logic Architect</i>
+</li><li><a class="wiki" href="RachelTwiss">Rachel Twiss</a> <i>Logic Architect</i>
+</li><li><a class="wiki" href="CatherineChisnell">Catherine Chisnell</a> <i>GUI Architect</i>
+</li><li><a class="wiki" href="MustafaShah">Mustafa Shah</a> <i>GUI Architect</i>
+</li></ul><h2 id="ProjectDescription:DungeonsandDragonsInteractiveCharacterSheet">Project Description: Dungeons and Dragons Interactive Character Sheet</h2>
+<p>
+An application to act as an interactive character sheet for Dungeons and Dragons, specifically the 4th edition of the game. All Player stats will be tracked and easy to modify. The application will be able to save values such as health and healing surges in order to keep track for the next play session.
+Gold currency and items will have an option to add, replace, or change.The Application will be able to track conditions and how they affect the character data.
+</p>
+<h2 id="MeetingNotes">Meeting Notes</h2>
+<ul><li><a class="wiki" href="Meeting1">Meeting 1</a>
+</li><li><a class="wiki" href="Meeting2">Meeting 2</a>
+</li><li><a class="wiki" href="Meeting3">Meeting 3</a>
+</li><li><a class="wiki" href="Meeting4">Meeting 4</a>
+</li></ul><h2 id="GroupDocuments">Group Documents</h2>
+<ul><li><a class="wiki" href="FRAD">Requirements Analysis Document</a>
+</li></ul><h2 id="GroupResources">Group Resources</h2>
+<ul><li><a class="wiki" href="TracGuide">TracGuide</a> --  Built-in Documentation
+</li><li><a class="wiki" href="WelcomeToTracPage">Welcome to Trac Page</a>
+</li><li>A Link to the character builder: <a class="ext-link" href="http://www.wizards.com/dnd/Tool.aspx?x=dnd/4new/tool/characterbuilder"><span class="icon"> </span>http://www.wizards.com/dnd/Tool.aspx?x=dnd/4new/tool/characterbuilder</a><br />
+</li><li>Wikipedia page for dungeons and dragons rules: <a class="ext-link" href="http://en.wikipedia.org/wiki/Dungeons_%26_Dragons"><span class="icon"> </span>http://en.wikipedia.org/wiki/Dungeons_%26_Dragons</a>
+</li></ul>
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="../attachment/wiki/WikiStart/dnd&#32;charcters.zip" title="View attachment">dnd charcters.zip</a>
+      <a href="../raw-attachment/wiki/WikiStart/dnd&#32;charcters.zip" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="386523 bytes">377.5 KB</span>) - added by <em>vigilante</em>
+      <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-02-10T15%3A00%3A33-0500&amp;precision=second" title="2014-02-10T15:00:33-0500 in Timeline">4 months</a> ago.
+                <q>Zip of a collect of characers-xml files</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/WikiStart/sheet_example.pdf" title="View attachment">sheet_example.pdf</a>
+      <a href="../raw-attachment/wiki/WikiStart/sheet_example.pdf" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="1191529 bytes">1.1 MB</span>) - added by <em>beland</em>
+      <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-03-15T17%3A47%3A48-0400&amp;precision=second" title="2014-03-15T17:47:48-0400 in Timeline">3 months</a> ago.
+                <q>An example of a character sheet.</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/WikiStart/D&amp;D&#32;Poster.jpg" title="View attachment">D&amp;D Poster.jpg</a>
+      <a href="../raw-attachment/wiki/WikiStart/D&amp;D&#32;Poster.jpg" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="1243466 bytes">1.2 MB</span>) - added by <em>shah</em>
+      <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-03-28T14%3A52%3A49-0400&amp;precision=second" title="2014-03-28T14:52:49-0400 in Timeline">2 months</a> ago.
+                <q>Promotional Poster</q>
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/WikiStart?version=29&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

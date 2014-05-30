@@ -1,0 +1,14 @@
+= Meeting 6 - Feb. 28 =
+'''This meeting'''
+   * Set up Environment
+   * Test Repository
+      * XML Parsing tester
+      * GUI test file
+   * Split up Tabs in GUI
+      * Catherine - Stats and Skills
+      * Mushy - Abilities
+      * Rachel - Items/Gold and Character/Notes
+	
+'''Next meeting''
+   * Basic GUI set up (Buttons and Labels and such)
+   * Look at parsing (?)

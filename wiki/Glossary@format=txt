@@ -1,0 +1,29 @@
+[wiki:FunctionalDescription Functional Description] |
+[wiki:Func&nonFuncReq Functional and Non-functional Requirements] |
+[wiki:UseCases Use Cases] |
+[wiki:GUISketches Sketches of the GUI] |
+[wiki:Roles List of Roles] |
+[wiki:Timeline Timeline] |
+[wiki:Glossary Glossary of Terms][[BR]]
+== Glossary ==
+'''Dungeons and Dragons''':[[BR]]
+'''Dice Values''': when referring to dice they are abbreviated as ndM, where n is the amount of dice, and M is amount of sides on the die.[[BR]]
+'''Condition''': something applied to character that affects how the character behaves, such as blinded, the character cannot see and limits their ability to attack.[[BR]]
+'''Standard''': one of the three actions allowed each turn, action are hierarchical, from standard->move->minor. So a standard can be used as a move or a minor, but not the other way.[[BR]]
+Every turn one of each is awarded, the standard is usually the main move of the turn.[[BR]]
+'''Move''': See Standard in regards to action information, move action is the action that allows a character to move.[[BR]]
+'''Minor''': See Standard in regards to action information, a minor action is a less powerful action and contributes in smaller way, such as healing an ally.[[BR]]
+'''HP''': Health Points. This is the amount of health that a character has. They lose health when being attacked and can gain health by 'healing'.[[BR]]
+'''Stats''': The particular strengths and weaknesses of a character. This includes how good their defenses are against attacks and which kinds of attacks they are good at (magic, physical).[[BR]]
+'''Skills''': The skills that a player can use and how good they are at them. This is dependent on their stats.[[BR]]
+'''Healing Surge''': A player has a limited number of healing surges that they can use in one day. A healing surge returns 1/4 of the player's HP.[[BR]]
+'''Encounter''': This is another word for 'battle'. A player enters an encounter when they start a fight with an enemy. This could also refer to a skill challenge, in which certain skills [[BR]]
+are tested in an event, an example would be riding a ship in a storm, characters would have to make skill checks to stay on the boat.[[BR]]
+'''Defence''': Defense is the characters ability to avoid damage. There are four defense categories; AC(Armour Class), Reflex(REF), Fortitude(FORT), Will(WILL)[[BR]]
+'''AC''': Armour Class is the characters ability to reduce damage using their Armour. Attacks that attack AC are generally force attacks such as getting hit by a sword.[[BR]]
+'''FORT''': Fortitude is the characters ability to withstand damage due to their physical stamina. A common attack against fort would be a poison attack, poison tests the physical stamina.[[BR]]
+'''Will''': Will is the characters ability to withstand damage due to their mental toughness. Generally these are attacks that attempt to corrupt a characters mind, such as a succubus doing, well succubus things.[[BR]]
+'''REF''': Reflex is the characters ability to withstand damage due to their agility or quick reactions. An example would be dodging an arrow.[[BR]]
+'''Action Point''': Each 'turn' in Dungeons and Dragons, a player can do a minor action, move actions, or attack action. If they would like to do an additional action, they can use an action point. The player can only use one action point per encounter.[[BR]]
+'''Ability''': Abilities encompass a large variety of things that a character can do. Some examples are use an attack, heal a team member, or turn into an animal.[[BR]]
+'''Daily/Encounter Abilities''': Characters have powerful abilities that they can only use once per encounter or once per day.[[BR]]

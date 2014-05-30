@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      SDD – Aquarius
+    </title>
+        <link rel="search" href="http://brown.caslab.queensu.ca/web/Aquarius/search" />
+        <link rel="help" href="TracGuide" />
+        <link rel="alternate" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/SDD?version=59&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="SDD" title="View latest version" />
+        <link rel="next" href="SDD@version=60" title="Version 60" />
+        <link rel="start" href="../wiki.1" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="SDD@version=58" title="Version 58" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/web/Aquarius/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://research.cs.queensu.ca/home/cisc320/"><img src="http://research.cs.queensu.ca/home/cisc320/Winter2014/cisc320.jpg" alt="(please configure the [header_logo] section in trac.ini)" height="50" /></a>
+      </div>
+      <form id="search" action="http://brown.caslab.queensu.ca/web/Aquarius/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login">Login</a></li><li><a href="../prefs">Preferences</a></li><li><a href="TracGuide">Help/Guide</a></li><li class="last"><a href="../about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first active"><a href="../wiki.1">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="SDD@version=58" title="Version 58">Previous Version</a></span></li><li><a href="SDD" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="SDD@version=60" title="Version 60">Next Version</a> &rarr;</span></li><li class="last"><a href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/SDD?action=diff&amp;version=59">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 59 (modified by beland, <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-03-09T00%3A53%3A09-0500&amp;precision=second" title="2014-03-09T00:53:09-0500 in Timeline">3 months</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h2 id="SystemDesignDocument">System Design Document</h2>
+<h2 id="TableofContents">Table of Contents</h2>
+<h3 id="Introduction"><a class="wiki" href="SDD@version=59#point1">Introduction</a></h3>
+<ul><li><a class="wiki" href="SDD@version=59#point2">Purpose of system</a>
+</li><li><a class="wiki" href="SDD@version=59#point3">Design goals</a>
+</li><li><a class="wiki" href="SDD@version=59#point4">Definition, acronyms and abbreviations</a>
+</li><li><a class="wiki" href="SDD@version=59#point5">References</a>
+</li><li><a class="wiki" href="SDD@version=59#point6">Overview</a>
+</li></ul><h3 id="Currentsoftwarearchitecture"><a class="wiki" href="SDD@version=59#point7">Current software architecture</a></h3>
+<h3 id="Proposedsoftwarearchitecture"><a class="wiki" href="SDD@version=59#point8">Proposed software architecture</a></h3>
+<ul><li><a class="wiki" href="SDD@version=59#point9">Overview</a>
+</li><li><a class="wiki" href="SDD@version=59#point10">Subsystem decomposition</a>
+</li><li><a class="wiki" href="SDD@version=59#point11">Hardware/software mapping</a>
+</li><li><a class="wiki" href="SDD@version=59#point12">Persistent data management</a>
+</li><li><a class="wiki" href="SDD@version=59#point13">Access control and security</a>
+</li><li><a class="wiki" href="SDD@version=59#point14">Global flow control</a>
+</li><li><a class="wiki" href="SDD@version=59#point15">Boundary conditions</a>
+</li><li><a class="wiki" href="SDD@version=59#point77">GUI Description and Screenshots</a>
+</li></ul><h3 id="Subsystemservices"><a class="wiki" href="SDD@version=59#point16">Subsystem services</a></h3>
+<h3 id="Milestones"><a class="wiki" href="SDD@version=59#point33">Milestones</a></h3>
+<h3 id="Timeline"><a class="wiki" href="SDD@version=59#point18">Timeline</a></h3>
+<h3 id="CodingAssignments"><a class="wiki" href="SDD@version=59#point19">Coding Assignments</a></h3>
+<h3 id="Glossary"><a class="wiki" href="SDD@version=59#point17">Glossary</a></h3>
+<hr />
+<h2 id="point1">Introduction</h2>
+<h3 id="point2">Purpose of system</h3>
+<p>
+The system is an application to act as an interactive character sheet for Dungeons and Dragons, specifically the 4th edition of the game. The application will be a Windows Forms Application on the Windows OS and could theoretically be expended to tablet and Microsoft Surface. The character sheet information is loaded from the Dungeons and Dragons character builder. All Player stats will be tracked and easy to modify. The application will be able to save values such as health and healing surges in order to keep track for the next play session. Gold currency and items will have an option to add, replace, or change. The Application will be able to track conditions and how they affect the character data.
+</p>
+<h3 id="point3">Design goals</h3>
+<p>
+The design goals of system are:
+</p>
+<ul><li>To be efficient. DnD is a fast paced games and reactions from the button must be instant.
+</li><li>To have a Character class whose data can be saved and reloaded by the user.
+</li><li>To allow the user to input their own data file.
+</li><li>To split up classes in a way that parts of the project can be worked on in parallel.
+</li></ul><h3 id="point4">Definition, acronyms and abbreviations</h3>
+<p>
+See <a class="wiki" href="SDD@version=59#point17">Glossary</a>.
+</p>
+<h3 id="point5">References</h3>
+<p>
+Although the team uses previous knowledge learned from the DnD books and experience playing in games, much of the information used in the character sheet can be obtained from the Character creator. To review the Character Creator use the following link:
+</p>
+<h3 id="point6">Overview</h3>
+<p>
+This document contains the class architecture and way that they interact. It also has the timeline and milestones in the group's project plan.
+</p>
+<hr />
+<h2 id="point7">Current software architecture</h2>
+<p>
+In progress.
+</p>
+<hr />
+<h2 id="point8">Proposed software architecture</h2>
+<h3 id="point9">Overview</h3>
+<p>
+The following classes will be used in the system:
+</p>
+<ul><li>Character
+</li><li>FileIOGUI
+</li><li>XMLParser
+</li><li>CharacterGUI
+</li><li>Ability
+</li></ul><h3 id="point10">Subsystem decomposition</h3>
+<p>
+Below are descriptions for each classes and how they relate to the other methods, lists of attributes, and lists of methods.
+<strong>Character</strong><br /><br />
+<span class="underline">Description</span><br />
+Stores information on Character. Instantiated for XML parser. Attributes are changed by GUI class.<br /><br />
+<span class="underline">Attributes</span><br />
+int originalHP<br />
+int currentHP<br />
+int originalActionPoints<br />
+int gold<br />
+int actionPoints<br />
+String items<br />
+int copper<br />
+int silver<br />
+int platinum<br />
+&lt;vector&gt; String Equipment<br />
+&lt;vector&gt;&lt;vector&gt; int abilities<br />
+int originalHealthSurges<br />
+int currentHealthSurges<br />
+int ac<br />
+int fort<br />
+int ref<br />
+int will<br />
+int initiative<br />
+int speed<br />
+int passiveInsight<br />
+int passivePerception<br />
+String specialSenses<br />
+Sting languages<br />
+String resistances<br />
+&lt;array&gt; int Skills<br />
+&lt;vector&gt; Strings equipmentDetails<br />
+String characterNotes<br /><br />
+</p>
+<p>
+<span class="underline">Methods</span><br />
+void useActionPoint<br />
+void useSecondWind<br />
+void useHealingSurge<br />
+void increaseHealth<br />
+void decreaseHealth<br />
+void newDay<br />
+void newEncounter<br />
+void endTurn<br />
+void increaseGold<br />
+void decreaseGold<br />
+void increaseSilver<br />
+void decreaseSilver<br />
+void increaseCopper<br />
+void decreaseCopper<br />
+void increasePlatinum<br />
+void decreasePlatinum<br />
+void addEquipment<br />
+void useAttack<br /><br />
+</p>
+<p>
+<strong>FileIOGUI</strong> <br /><br />
+<span class="underline">Description</span> <br />
+Window where you can input file name of DnD character file.<br /><br /> 
+</p>
+<p>
+<span class="underline">Attributes</span><br />
+fileTextBox<br />
+browseButton<br />
+okButton<br /><br />
+</p>
+<p>
+<span class="underline">Methods</span><br />
+okButton <a class="missing wiki">LoadFile?</a> (calls XMLParser on the file in the textbox)<br /><br />
+</p>
+<p>
+<strong>XMLParser</strong><br /><br />
+<span class="underline">Description</span> <br />
+Instantiated by FileIO class with the filename to be parsed. Parses DnD character XML file for desired info and instantiates a Character object with this information.<br /><br />
+<span class="underline">Attributes</span><br />
+String filename<br /><br />
+<span class="underline">Method</span><br />
+void <a class="missing wiki">LoadData?</a> (instantiates a Character with the loaded data)<br /><br />
+</p>
+<p>
+<strong>CharacterGUI</strong><br /><br />
+<span class="underline">Description</span> <br />
+Shows information to the user. User can interact with the character data by using buttons and text fields, which call the setter methods from the Character class. Also calls the FileIO window.<br /><br />
+<span class="underline">Attributes</span><br />
+GUI Elements<br /><br />
+<span class="underline">Methods</span><br />
+Listeners for GUI elements
+(See Character Methods)<br /><br />
+</p>
+<p>
+<strong>Ability</strong><br /><br />
+<span class="underline">Description</span><br />
+Stores data on the abilities that can be used by the character.<br /><br />
+<span class="underline">Attributes</span><br />
+String name<br />
+String description<br />
+String attackInfo<br />
+int damage<br /><br />
+<span class="underline">Methods</span><br />
+void useAbility
+</p>
+<h3 id="point11">Hardware/software mapping</h3>
+<h3 id="point12">Persistent data management</h3>
+<h3 id="point13">Access control and security</h3>
+<h3 id="point14">Global flow control</h3>
+<h3 id="point15">Boundary conditions</h3>
+<h3 id="point77">GUI Description and Screenshots</h3>
+<ul><li>Stats Tab
+</li></ul><p>
+Contains information about the current status of the player, including health, abilities, action points etc. <br />
+<a style="padding:0; border:none" href="http://brown.caslab.queensu.ca/web/Aquarius/browser/GUI%20screenshots/GUI_Stats_Tab.JPG"><img src="http://brown.caslab.queensu.ca/web/Aquarius/browser/GUI%20screenshots/GUI_Stats_Tab.JPG?format=raw" alt="source:/GUI screenshots/GUI_Stats_Tab.JPG" title="source:/GUI screenshots/GUI_Stats_Tab.JPG" /></a>
+</p>
+<ul><li>Skills Tab
+</li></ul><p>
+Scores for each individual skill of the character<br />
+<a style="padding:0; border:none" href="http://brown.caslab.queensu.ca/web/Aquarius/browser/GUI%20screenshots/GUI_Skills_Tab.JPG"><img src="http://brown.caslab.queensu.ca/web/Aquarius/browser/GUI%20screenshots/GUI_Skills_Tab.JPG?format=raw" alt="source:/GUI screenshots/GUI_Skills_Tab.JPG" title="source:/GUI screenshots/GUI_Skills_Tab.JPG" /></a>
+</p>
+<ul><li>Items Tab
+</li></ul><p>
+List of current items and equipment. Also keeps track of gold.<br />
+<a style="padding:0; border:none" href="http://brown.caslab.queensu.ca/web/Aquarius/browser/GUI%20screenshots/GUI_Items_Tab.JPG"><img src="http://brown.caslab.queensu.ca/web/Aquarius/browser/GUI%20screenshots/GUI_Items_Tab.JPG?format=raw" alt="source:/GUI screenshots/GUI_Items_Tab.JPG" title="source:/GUI screenshots/GUI_Items_Tab.JPG" /></a>
+</p>
+<ul><li>Notes Tab
+</li></ul><p>
+A space for the user to add any additional notes about the current game.<br />
+<a style="padding:0; border:none" href="http://brown.caslab.queensu.ca/web/Aquarius/browser/GUI%20screenshots/GUI_Notes_Tab.JPG"><img src="http://brown.caslab.queensu.ca/web/Aquarius/browser/GUI%20screenshots/GUI_Notes_Tab.JPG?format=raw" alt="source:/GUI screenshots/GUI_Notes_Tab.JPG" title="source:/GUI screenshots/GUI_Notes_Tab.JPG" /></a>
+</p>
+<hr />
+<h2 id="point16">Subsystem services</h2>
+<hr />
+<h2 id="point33">Milestones</h2>
+<p>
+--Completed-- <br />
+* Wiki Set Up and RAD - Feb 10, 2014 <br />
+* Set up Environments (ALL members) - March 4, 2014 <br />
+<br />
+--Upcoming-- <br />
+* Load XML File and Choose Nodes <br />
+* Set up Basic GUI Framework <br />
+* Add Functionality to GUI <br />
+* SDD Document <br />
+* Art and Final Touches <br />
+* Testing <br /> 
+</p>
+<hr />
+<h2 id="point18">Timeline</h2>
+<h3 id="Week4">Week 4</h3>
+<ul><li>Finish planning <br />
+</li><li>Finish functional analysis document <br />
+</li><li>Start researching libraries <br />
+</li><li>Learn to play Dungeon and Dragons! <br />
+</li></ul><h3 id="Week5">Week 5</h3>
+<ul><li>Start GUI Frames <br />
+</li><li>Start parsing <br />
+</li><li>Decide on data format/data structure <br />
+</li><li>Decide on libraries being used <br />
+</li></ul><h3 id="Week7-8">Week 7 - 8</h3>
+<ul><li>Logic decides what is needed from parser <br />
+</li><li>GUI decides what information they want to display <br />
+</li><li>GUI gets as much data in a possible <br />
+</li></ul><h3 id="Week9">Week 9</h3>
+<ul><li>Goal is to have information going from text file all the way up to GUI <br />
+</li><li>Have a rough GUI with all of data on it <br />
+<strong>MILESTONE: Set Up Basic GUI Framework</strong>
+</li></ul><h3 id="Week10">Week 10</h3>
+<ul><li>add functionality to data GUI <br />
+</li><li>Parser should have data in format GUI can use <br />
+<strong>MILESTONE: Add Functionality to GUI</strong> <br />
+<strong>MILESTONE: Load XML File and Choose Nodes</strong>
+</li></ul><h3 id="Week11">Week 11</h3>
+<ul><li>refine GUI design <br />
+</li><li>final testing <br />
+<strong> MILESTONE: Art and Final Touches</strong>
+</li></ul><h2 id="point19">Coding Assignments</h2>
+<p>
+Sophie - in charge of the XMLPARSER class and FILE I/O. <br /><br />
+Torrencio - in charge of the CHARACTER class. <br /><br />
+Rachel - working on the GUI class and helping with the CHARACTER class. <br /><br />
+Catherine - working on the GUI class, specifically skills and details. <br /><br />
+Mushy - working on the ABILITIES class.
+</p>
+<hr />
+<h2 id="point17">Glossary</h2>
+<p>
+<strong>Dice Values</strong>: when referring to dice they are abbreviated as ndM, where n is the amount of dice, and M is amount of sides on the die.<br />
+<strong>Condition</strong>: something applied to character that affects how the character behaves, such as blinded, the character cannot see and limits their ability to attack.<br />
+<strong>Standard</strong>: one of the three actions allowed each turn, action are hierarchical, from standard-&gt;move-&gt;minor. So a standard can be used as a move or a minor, but not the other way.<br />
+Every turn one of each is awarded, the standard is usually the main move of the turn.<br />
+<strong>Move</strong>: See Standard in regards to action information, move action is the action that allows a character to move.<br />
+<strong>Minor</strong>: See Standard in regards to action information, a minor action is a less powerful action and contributes in smaller way, such as healing an ally.<br />
+<strong>HP</strong>: Health Points. This is the amount of health that a character has. They lose health when being attacked and can gain health by 'healing'.<br />
+<strong>Stats</strong>: The particular strengths and weaknesses of a character. This includes how good their defenses are against attacks and which kinds of attacks they are good at (magic, physical).<br />
+<strong>Skills</strong>: The skills that a player can use and how good they are at them. This is dependent on their stats.<br />
+<strong>Healing Surge</strong>: A player has a limited number of healing surges that they can use in one day. A healing surge returns 1/4 of the player's HP.<br />
+<strong>Encounter</strong>: This is another word for 'battle'. A player enters an encounter when they start a fight with an enemy. This could also refer to a skill challenge, in which certain skills <br />
+are tested in an event, an example would be riding a ship in a storm, characters would have to make skill checks to stay on the boat.<br />
+<strong>Defence</strong>: Defense is the characters ability to avoid damage. There are four defense categories; AC(Armour Class), Reflex(REF), Fortitude(FORT), Will(WILL)<br />
+<strong>AC</strong>: Armour Class is the characters ability to reduce damage using their Armour. Attacks that attack AC are generally force attacks such as getting hit by a sword.<br />
+<strong>FORT</strong>: Fortitude is the characters ability to withstand damage due to their physical stamina. A common attack against fort would be a poison attack, poison tests the physical stamina.<br />
+<strong>Will</strong>: Will is the characters ability to withstand damage due to their mental toughness. Generally these are attacks that attempt to corrupt a characters mind, such as a succubus doing, well succubus things.<br />
+<strong>REF</strong>: Reflex is the characters ability to withstand damage due to their agility or quick reactions. An example would be dodging an arrow.<br />
+<strong>Action Point</strong>: Each 'turn' in Dungeons and Dragons, a player can do a minor action, move actions, or attack action. If they would like to do an additional action, they can use an action point. The player can only use one action point per encounter.<br />
+<strong>Ability</strong>: Abilities encompass a large variety of things that a character can do. Some examples are use an attack, heal a team member, or turn into an animal.<br />
+<strong>Daily/Encounter Abilities</strong>: Characters have powerful abilities that they can only use once per encounter or once per day.<br />
+</p>
+
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="../attachment/wiki/SDD/CLASS&#32;UML.pdf" title="View attachment">CLASS UML.pdf</a>
+      <a href="../raw-attachment/wiki/SDD/CLASS&#32;UML.pdf" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="91034 bytes">88.9 KB</span>) - added by <em>vigilante</em>
+      <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-03-09T10%3A56%3A46-0400&amp;precision=second" title="2014-03-09T10:56:46-0400 in Timeline">3 months</a> ago.
+              </li>
+              <li>
+      <a href="../attachment/wiki/SDD/CLASS_UML.jpg" title="View attachment">CLASS_UML.jpg</a>
+      <a href="../raw-attachment/wiki/SDD/CLASS_UML.jpg" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="24674 bytes">24.1 KB</span>) - added by <em>twiss</em>
+      <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-03-11T19%3A14%3A19-0400&amp;precision=second" title="2014-03-11T19:14:19-0400 in Timeline">3 months</a> ago.
+              </li>
+              <li>
+      <a href="../attachment/wiki/SDD/GUI_Items_Tab.jpg" title="View attachment">GUI_Items_Tab.jpg</a>
+      <a href="../raw-attachment/wiki/SDD/GUI_Items_Tab.jpg" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="72042 bytes">70.4 KB</span>) - added by <em>twiss</em>
+      <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-03-11T19%3A14%3A25-0400&amp;precision=second" title="2014-03-11T19:14:25-0400 in Timeline">3 months</a> ago.
+              </li>
+              <li>
+      <a href="../attachment/wiki/SDD/GUI_Notes_Tab.jpg" title="View attachment">GUI_Notes_Tab.jpg</a>
+      <a href="../raw-attachment/wiki/SDD/GUI_Notes_Tab.jpg" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="41051 bytes">40.1 KB</span>) - added by <em>twiss</em>
+      <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-03-11T19%3A14%3A31-0400&amp;precision=second" title="2014-03-11T19:14:31-0400 in Timeline">3 months</a> ago.
+              </li>
+              <li>
+      <a href="../attachment/wiki/SDD/GUI_Skills_Tab.jpg" title="View attachment">GUI_Skills_Tab.jpg</a>
+      <a href="../raw-attachment/wiki/SDD/GUI_Skills_Tab.jpg" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="55868 bytes">54.6 KB</span>) - added by <em>twiss</em>
+      <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-03-11T19%3A14%3A38-0400&amp;precision=second" title="2014-03-11T19:14:38-0400 in Timeline">3 months</a> ago.
+              </li>
+              <li>
+      <a href="../attachment/wiki/SDD/GUI_Stats_Tab.jpg" title="View attachment">GUI_Stats_Tab.jpg</a>
+      <a href="../raw-attachment/wiki/SDD/GUI_Stats_Tab.jpg" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="79030 bytes">77.2 KB</span>) - added by <em>twiss</em>
+      <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-03-11T19%3A14%3A44-0400&amp;precision=second" title="2014-03-11T19:14:44-0400 in Timeline">3 months</a> ago.
+              </li>
+              <li>
+      <a href="../attachment/wiki/SDD/UML_SEQUENCE.jpg" title="View attachment">UML_SEQUENCE.jpg</a>
+      <a href="../raw-attachment/wiki/SDD/UML_SEQUENCE.jpg" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="19676 bytes">19.2 KB</span>) - added by <em>twiss</em>
+      <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-03-11T19%3A14%3A49-0400&amp;precision=second" title="2014-03-11T19:14:49-0400 in Timeline">3 months</a> ago.
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/SDD?version=59&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      Glossary (diff) – Aquarius
+    </title>
+        <link rel="search" href="http://brown.caslab.queensu.ca/web/Aquarius/search" />
+        <link rel="help" href="TracGuide" />
+        <link rel="up" href="Glossary@action=history" title="Page history" />
+        <link rel="start" href="../wiki.1" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="http://brown.caslab.queensu.ca/web/Aquarius/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/Glossary?action=diff&amp;version=14" title="Version 14" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="http://brown.caslab.queensu.ca/web/Aquarius/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/web/Aquarius/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="http://brown.caslab.queensu.ca/web/Aquarius/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://research.cs.queensu.ca/home/cisc320/"><img src="http://research.cs.queensu.ca/home/cisc320/Winter2014/cisc320.jpg" alt="(please configure the [header_logo] section in trac.ini)" height="50" /></a>
+      </div>
+      <form id="search" action="http://brown.caslab.queensu.ca/web/Aquarius/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login">Login</a></li><li><a href="../prefs">Preferences</a></li><li><a href="TracGuide">Help/Guide</a></li><li class="last"><a href="../about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first active"><a href="../wiki.1">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/Glossary?action=diff&amp;version=14" title="Version 14">Previous Change</a></span></li><li><a href="Glossary@action=history" title="Page history">Wiki History</a></li><li class="last"><span class="missing">Next Change &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="Glossary@version=14">Version 14</a> and
+        <a href="Glossary@version=15">Version 15</a> of
+        <a href="Glossary@version=15">Glossary</a>
+      </h1>
+      <form method="post" id="prefs" action="Glossary@version=15"><div><input type="hidden" name="__FORM_TOKEN" value="ded2e27addbac7ad9541ebef" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="15" />
+          <input type="hidden" name="old_version" value="14" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          02/05/14 22:48:26 (<a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-02-05T22%3A48%3A26-0500&amp;precision=second" title="2014-02-05T22:48:26-0500 in Timeline">4 months</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          vigilante
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="Glossary@version=15">Glossary</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 14">
+                    <a href="Glossary@version=14#L10">
+                      v14</a>
+                  </th>
+                  <th title="Version 15">
+                    <a href="Glossary@version=15#L10">
+                      v15</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>10</th><td class="l"><span>'''Dice Values''': when referring to dice they are abbreviated as ndM, where n is the amount of dice, and M is amount of sides on the die.[[BR]]</span> </td>
+                  </tr><tr>
+                          <th>11</th><th>11</th><td class="l"><span>'''Condition''': something applied to character that affects how the character behaves, such as blinded, the character cannot see and limits their ability to attack.[[BR]]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>12</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>12</th><td class="r"><span>'''Standard''': one of the three actions allowed each turn, action are hierarchical, from standard-&gt;move-&gt;minor. So a standard can be used as a move or a minor, but not the other way.[[BR]]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>13</th><td class="r"><span>Every turn one of each is awarded, the standard is usually the main move of the turn.[[BR]]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>14</th><td class="r"><span>'''Move''': See Standard in regards to action information, move action is the action that allows a character to move.[[BR]]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>15</th><td class="r"><span>'''Minor''': See Standard in regards to action information, a minor action is a less powerful action and contributes in smaller way, such as healing an ally.[[BR]]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>16</th><td class="l"><span>'''HP''': Health Points. This is the amount of health that a character has. They lose health when being attacked and can gain health by 'healing'.[[BR]]</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>17</th><td class="l"><span>'''Stats''': The particular strengths and weaknesses of a character. This includes how good their defenses are against attacks and which kinds of attacks they are good at (magic, physical).[[BR]]</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

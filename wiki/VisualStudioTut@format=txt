@@ -1,0 +1,26 @@
+
+Create a Visual C++ --> CLR --> CLR Empty Project (Obviously you specify the Name and the Directory).
+
+Once it gets created, right-click on the project and select "Add --> New Item".
+
+Under the UI tab, select "Windows Form". Name your form and click OK. This form would get added to the project.
+
+After the form gets added, copy the following code inside the YourFormName.cpp:
+
+using namespace System;
+using namespace System::Windows::Forms;
+
+[STAThread]
+void Main(array<String^>^ args)
+{
+    Application::EnableVisualStyles();
+    Application::SetCompatibleTextRenderingDefault(false);
+    Project1::MyForm myForm;        //NameOfProject::NameOfForm instanceOfForm;
+    Application::Run(%myForm);
+}
+
+We're almost done...
+
+Now under the Project Properties, expand the Linker section and select "System". Under the subsystem option, choose Windows(/SUBSYSTEM/WINDOWS)
+
+Now add an entry point. Under the "Linker-->Advanced", choose "Main" as the "Entry Point" 

@@ -1,0 +1,40 @@
+= __''Team Aquarius''__ =
+
+[[Image(D&D Poster.jpg)]]
+
+== Group Members ==
+   * [wiki:SophieBeland Sophie Beland]  ''Lead Architect/Parsing''
+   * [wiki:TorrencioVigilante Torrencio Vigilante] ''Project Manager/Logic Architect''
+   * [wiki:RachelTwiss Rachel Twiss] ''Logic Architect''
+   * [wiki:CatherineChisnell Catherine Chisnell] ''GUI Architect''
+   * [wiki:MustafaShah Mustafa Shah] ''GUI Architect''
+
+== Project Description: Dungeons and Dragons Interactive Character Sheet ==
+An application to act as an interactive character sheet for Dungeons and Dragons, specifically the 4th edition of the game. All Player stats will be tracked and easy to modify. The application will be able to save values such as health and healing surges in order to keep track for the next play session.
+Gold currency and items will have an option to add, replace, or change.The Application will be able to track conditions and how they affect the character data.
+
+
+== Meeting Notes ==
+   * [wiki:Meeting1 Meeting 1]
+   * [wiki:Meeting2 Meeting 2]
+   * [wiki:Meeting3 Meeting 3]
+   * [wiki:Meeting4 Meeting 4]
+   * [wiki:Meeting5 Meeting 5]
+   * [wiki:Meeting6 Meeting 6]
+   * [wiki:Meeting7 Meeting 7]
+   * [wiki:Meeting8 Meeting 8]
+   * [wiki:Meeting9 Meeting 9]
+   * [wiki:Meeting10 Meeting 10]
+== Group Documents ==
+   * [wiki:FRAD Requirements Analysis Document]
+   * [http://brown.caslab.queensu.ca/web/Aquarius/browser/CISC320_aquarius_presentation.pptx Group Presentation]
+   * [wiki:SDD System Design Document]
+
+== Group Resources ==
+ * TracGuide --  Built-in Documentation
+ * [wiki:WelcomeToTracPage Welcome to Trac Page]
+ * A Link to the character builder: [http://www.wizards.com/dnd/Tool.aspx?x=dnd/4new/tool/characterbuilder][[BR]]
+ * Wikipedia page for dungeons and dragons rules: [http://en.wikipedia.org/wiki/Dungeons_%26_Dragons]
+ * [wiki:VisualStudioTut Setting up Windows Forms on Visual Studio]
+ * Non-resizable window size (620,480).
+ * [http://brown.caslab.queensu.ca/web/Aquarius/wiki/GuiTabs_tut Tab to .h Tutorial]

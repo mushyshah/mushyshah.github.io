@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      FRAD – Aquarius
+    </title>
+        <link rel="search" href="http://brown.caslab.queensu.ca/web/Aquarius/search" />
+        <link rel="help" href="TracGuide" />
+        <link rel="alternate" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/FRAD?version=3&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="FRAD" title="View latest version" />
+        <link rel="next" href="FRAD@version=4" title="Version 4" />
+        <link rel="start" href="../wiki.1" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="FRAD@version=2" title="Version 2" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/web/Aquarius/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://research.cs.queensu.ca/home/cisc320/"><img src="http://research.cs.queensu.ca/home/cisc320/Winter2014/cisc320.jpg" alt="(please configure the [header_logo] section in trac.ini)" height="50" /></a>
+      </div>
+      <form id="search" action="http://brown.caslab.queensu.ca/web/Aquarius/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login">Login</a></li><li><a href="../prefs">Preferences</a></li><li><a href="TracGuide">Help/Guide</a></li><li class="last"><a href="../about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first active"><a href="../wiki.1">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="FRAD@version=2" title="Version 2">Previous Version</a></span></li><li><a href="FRAD" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="FRAD@version=4" title="Version 4">Next Version</a> &rarr;</span></li><li class="last"><a href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/FRAD?action=diff&amp;version=3">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 3 (modified by beland, <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-01-30T15%3A49%3A49-0500&amp;precision=second" title="2014-01-30T15:49:49-0500 in Timeline">4 months</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h2 id="FunctionalDescription">Functional Description</h2>
+<p>
+A functional description of what you are planning to build. Consider inputs and outputs and what you are trying to accomplish. A diagram might best describe these concepts.
+</p>
+<h2 id="FunctionalandNon-functionalRequirements">Functional and Non-functional Requirements</h2>
+<p>
+A list of functional and non-functional requirements.
+</p>
+<h2 id="UseCases">Use Cases</h2>
+<p>
+A least one use case. You must have enough use cases that all of the necessary functionality is described. If you have several use cases, you will need a use case diagram to show how they relate.
+</p>
+<h2 id="SketchesifGUI">Sketches if GUI</h2>
+<p>
+<a class="missing attachment">attachment:cisc320_aquarius_prelim_design.pptx</a>
+</p>
+<h2 id="ListofRoles">List of Roles</h2>
+<pre class="wiki">Sophie - Lead Architect/Parser
+Mushy - GUI Architect
+Rachel - Logic Architect
+Catherine - GUI Architect
+Torrencio - Project Manager/Logic Architect
+</pre><h2 id="TimeLine">Time Line</h2>
+<p>
+A project plan, or time-line, for the remaining 7 weeks you have to work on this project.
+</p>
+<h2 id="Glossary">Glossary</h2>
+<p>
+A Glossary of terms used in your functional description.
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/FRAD?version=3&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

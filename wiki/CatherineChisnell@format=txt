@@ -1,0 +1,41 @@
+= __Catherine Chisnell__ =
+
+== Tasks to Complete ==
+   * All tasks complete :D
+   
+
+== Tasks Completed == 
+
+ ''Weeks 1-6''
+   * Make individual Wiki page 
+   * Install Visual Studio 
+     * Run "Hello World" Program 
+   * Update Wiki
+     * Make individual page 
+     * Add section for meeting notes
+   * Learned how to play D&D 
+   * Complete Functional and Non-Functional Requirements page 
+   * Install Tortoise SVN
+   * Download Qt
+   * Get to know features of Qt
+   * Decide not to use Qt after all
+ 
+ ''Weeks 7-8''
+   * Try to make some basic GUI frames
+   * Use Frames in Visual Studio to make GUI
+      * Get to know design functionality
+   * Design Stats and Skills tabs in GUI, add some basic functionality 
+   * Upload GUI Screenshots to the SDD
+   * Change element names in GUI to allow different tabs to be combined easily
+
+ ''Weeks 9-12''
+   * Added Bloodied Label functionality (only visible when health is half of total health)
+   * Combined the two existing versions of Character Class into one class
+   * Added the Character Testing code to the GUI code
+   * Able to pass value (total health) from testing Character object into GUI
+   * Added functionality to GUI buttons, integrating with the Character Class
+   * Integrate Character class, GUI class, and XML parser
+   * Add background to GUI - lags too much, no background
+   * Test GUI functionality and fix all bugs
+  
+

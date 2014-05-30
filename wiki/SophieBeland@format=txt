@@ -1,0 +1,33 @@
+Role: Lead Architect and Parser[[BR]]
+
+== Work Completed Weeks 1 - 7 ==
+ * Installed Visual Studio 2013
+ * Ran Hello World
+ * Finished RAD document Use Cases and GUI Design
+ * Finished PPT for presentation
+ * Finished midterm presentation
+ * Set up Windows Forms on Visual Studio 2012. This was a bit of a challenge since Windows Forms had been changed to C# from VS2012 on. Torrencio and I found a solution online.
+ * Installed and tested rapid XML.
+ * I created two example projects, one for using Windows Forms and the other for using RapidXML, and submitted them to the repository so that all group members could finish setting up their environment.
+
+== Work Completed Weeks 8 ==
+ * Testing parsing on actual DnD data.
+ * Set up SDD documents.
+ * Finished class list with methods and attributes for SDD document.
+ * Completed the introduction for the SDD document.
+ * Completed SDD.
+
+== Work Completed Weeks 9 ==
+ * Made progress on XML class. Parsed in most of required info from XML doc.
+
+== Work Completed Weeks 10 ==
+ * Finished the Character class and tester class.
+
+== Work Completed Weeks 11 ==
+ * Updated the Character class
+ * Finished the XMLParser class
+ * Integrated the Character and XMLParser class
+ * Suffered through integration
+
+== Work to Do ==
+ * Make the GUI pretty and user friendly.

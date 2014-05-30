@@ -1,0 +1,47 @@
+= Meeting 3 - Jan 30 =
+
+== This Meeting ==
+   * Decide what to do
+      * Logic
+         * Tori
+         * Rachel
+      * GUI
+         * Catherine
+         * Mushy
+      * Parsing
+         * Sophie
+      * Designing
+         * Everyone
+
+   * Make initial outline of GUI on power-point
+      * Stats are related to other things, need to incorporate that
+      * New day button to reset stats
+      * Dice roll button 
+      * Uploaded to wiki
+
+   * Meet this Friday to play D&D
+
+__Requirements Analysis Document__
+   * A functional description of what you are planning to build. Consider inputs and outputs and what you are trying to accomplish. A diagram might best describe these concepts.
+      * Tori
+   * A list of functional and non-functional requirements.
+      * Catherine
+   * A least one use case. You must have enough use cases that all of the necessary functionality is described. If you have several use cases, you will need a use case diagram to show how they relate.
+      * Sophie, Rachel, Tori
+   * Sketches or prototypes of the GUI interface (all windows) along with a description of how the user will navigate through the interface.
+      * Sophie
+   * A list of the roles assigned to each team member.
+      * Sophie
+   * A project plan, or time-line, for the remaining 7 weeks you have to work on this project.
+      * All
+   * A Glossary of terms used in your functional description.
+      * Tori
+
+== For next meeting == 
+   * Update Project description (Tori)
+   * Post character profiles on wiki so we can see what they include (Tori)
+   * Link to character-building site
+   * Work on Requirements Analysis Document
+   * Meeting Tomorrow to learn D&D
+      * 2:30
+      * Walter Light

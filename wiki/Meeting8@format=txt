@@ -1,0 +1,30 @@
+= Meeting 8 - Mar 13 =
+'''This Meeting'''
+   * Dice Logic
+      * Equation and GUI logic
+      * Dice roll button beside New Day and etc.
+      * Done by Tori and GUI people
+   * Parsing
+      * Parsed some of XML file, stored in array
+         * Some will not be able to be stored in array as they change size
+         * Need to solve that later (linked list?)
+   * SDD marking starts today
+   * Still needs to be done:
+      * Parse out everything
+      * Make abilities class
+      * Character class (related to parsing)
+   * Are we on time based on out timeline:
+      * From FRAD: “Week 7 - 8
+         * Logic decides what is needed from parser 
+         * GUI decides what information they want to display 
+         * Parser should have data in format Logic can use 
+         * GUI gets as much data in a possible “
+      * Yes we are basically on time, parsing should be completed soon, GUI is ahead of predicted, new classes (Character and Abilities) have been added to project so they need to be coded in the next few weeks
+   * Don’t need meeting on Friday
+
+'''For Next Meeting:'''
+   * Character Class mostly done - Sophie
+   * Abilities GUI Class done - Mushy
+   * Parsing Done - Sophie
+   * Dice rolling logic done – Tori
+   * GUI tabs all together – Mushy, Catherine, Rachel

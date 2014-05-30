@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      Func&amp;nonFuncReq – Aquarius
+    </title>
+        <link rel="search" href="http://brown.caslab.queensu.ca/web/Aquarius/search" />
+        <link rel="help" href="TracGuide" />
+        <link rel="alternate" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/Func%26nonFuncReq?version=3&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="Func&amp;nonFuncReq" title="View latest version" />
+        <link rel="next" href="Func&amp;nonFuncReq@version=4" title="Version 4" />
+        <link rel="start" href="../wiki.1" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="Func&amp;nonFuncReq@version=2" title="Version 2" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/web/Aquarius/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://research.cs.queensu.ca/home/cisc320/"><img src="http://research.cs.queensu.ca/home/cisc320/Winter2014/cisc320.jpg" alt="(please configure the [header_logo] section in trac.ini)" height="50" /></a>
+      </div>
+      <form id="search" action="http://brown.caslab.queensu.ca/web/Aquarius/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login">Login</a></li><li><a href="../prefs">Preferences</a></li><li><a href="TracGuide">Help/Guide</a></li><li class="last"><a href="../about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first active"><a href="../wiki.1">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="Func&amp;nonFuncReq@version=2" title="Version 2">Previous Version</a></span></li><li><a href="Func&amp;nonFuncReq" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="Func&amp;nonFuncReq@version=4" title="Version 4">Next Version</a> &rarr;</span></li><li class="last"><a href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/Func%26nonFuncReq?action=diff&amp;version=3">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 3 (modified by twiss, <a class="timeline" href="http://brown.caslab.queensu.ca/web/Aquarius/timeline?from=2014-02-05T20%3A13%3A12-0500&amp;precision=second" title="2014-02-05T20:13:12-0500 in Timeline">4 months</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+<a class="wiki" href="FunctionalDescription">Functional Description</a> |
+<a class="wiki" href="Func&amp;nonFuncReq">Functional and Non-functional Requirements</a> |
+<a class="wiki" href="UseCases">Use Cases</a> |
+<a class="wiki" href="Roles">List of Roles</a> |
+<a class="wiki" href="Timeline">Timeline</a> |
+<a class="wiki" href="Glossary">Glossary of Terms</a>
+</p>
+<h2 id="FunctionalandNon-functionalRequirements">Functional and Non-functional Requirements</h2>
+<h3 id="FunctionalRequirements">Functional Requirements</h3>
+<ul><li>Read in a character profile and parse out relevant information
+</li><li>GUI to keep track of vital information such as health, gold, and items
+</li><li>Ability to change stats
+</li><li>Provide information about attacks and skills
+</li><li>Ability to restart certain stats (create new day)
+</li></ul><h3 id="Non-FunctionalRequirements">Non-Functional Requirements</h3>
+<ul><li>Usability
+<ul><li>User must have knowledge of the game and rules
+</li><li>Interface will be similar to paper traditionally used in game, familiarity with those will be beneficial
+</li><li>Character profiles can be imported from an online character-building website
+</li></ul></li><li>Reliability
+<ul><li>Must be reliable for duration of game
+</li><li>After a failure it can be restarted, but changes made during then game may be lost in this process (changes to health/armour)
+</li><li>Data should not be lost, as some changes can carry over to additional games-
+</li></ul></li><li>Performance
+<ul><li>Should be able to make changes and have them appear by the end of turn (instantaneously would be best)
+</li><li>User tasks are turn based, with a normal turn taking a few minutes at most, must be able to affect changes during this time
+</li><li>Each user is responsible for their own character so there will not be any concurrent use
+</li><li>Latency should be minimized to ensure turns do not take a long time
+</li><li>There will be a reasonable amount of data to store per character (initial health, armour, attacks, items)
+</li></ul></li><li>Supportability
+<ul><li>Support will depend on the platform of the user
+</li></ul></li><li>Interface
+<ul><li>Data will be imported via a file obtained from a website. This file will be parsed through to obtain necessary information
+</li></ul></li><li>Packaging
+<ul><li>The installation will be done by the user, unlimited times
+</li></ul></li><li>Legal
+<ul><li>It may infringe on the Dungeons and Dragons brand, though that would need to be researched further
+</li></ul></li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://brown.caslab.queensu.ca/web/Aquarius/wiki/Func%26nonFuncReq?version=3&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>
